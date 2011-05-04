@@ -23,32 +23,17 @@
 		<finalName>at.meikel.dmrl.webapp</finalName>
 		<plugins>
 			<!--
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
+				<plugin> <groupId>org.codehaus.mojo</groupId>
 				<artifactId>buildnumber-maven-plugin</artifactId>
-				<version>1.0</version>
-				<configuration>
-					<doCheck>false</doCheck>
-					<doUpdate>false</doUpdate>
-					<format>{0,number}.{1,number}.{2,number}-{3}-{4,date,yyyy-MM-dd
-						HH:mm:ss}</format>
-					<items>
-						<item>buildNumber0</item>
-						<item>buildNumber1</item>
-						<item>buildNumber2</item>
-						<item implementation="java.lang.String">localhost</item>
-						<item>timestamp</item>
-					</items>
-				</configuration>
-				<executions>
-					<execution>
-						<phase>validate</phase>
-						<goals>
-							<goal>create</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
+				<version>1.0</version> <configuration> <doCheck>false</doCheck>
+				<doUpdate>false</doUpdate>
+				<format>{0,number}.{1,number}.{2,number}-{3}-{4,date,yyyy-MM-dd
+				HH:mm:ss}</format> <items> <item>buildNumber0</item>
+				<item>buildNumber1</item> <item>buildNumber2</item> <item
+				implementation="java.lang.String">localhost</item>
+				<item>timestamp</item> </items> </configuration> <executions>
+				<execution> <phase>validate</phase> <goals> <goal>create</goal>
+				</goals> </execution> </executions> </plugin>
 			-->
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -85,6 +70,9 @@
 					<scanIntervalSeconds>10</scanIntervalSeconds>
 					<stopKey>jetty:stop</stopKey>
 					<stopPort>9999</stopPort>
+					<webAppConfig>
+						<contextPath>/dmrl</contextPath>
+					</webAppConfig>
 				</configuration>
 			</plugin>
 		</plugins>
