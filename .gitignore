@@ -1,4 +1,9 @@
-#.classpath
-#.project
-#.settings/
+.classpath
+.project
+.settings/
+
+at.meikel.dmrl.server/.classpath
+at.meikel.dmrl.server/.project
+
+
 target/
