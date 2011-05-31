@@ -6,6 +6,9 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>at.meikel.dmrl.reactor</name>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
 	<modules>
 		<module>at.meikel.dmrl.webapp</module>
 		<module>at.meikel.dmrl.taglib</module>
