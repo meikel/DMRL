@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+	version="2.0">
+	<description>CBS GUI library</description>
+	<tlib-version>1.0</tlib-version>
+	<short-name>properties</short-name>
+	<uri>http://www.meikel.at/jsp/dmrl/properties</uri>
+
+	<tag>
+		<description>
+			Generates an input field for entering a date.
+		</description>
+		<name>calendar</name>
+		<tag-class>at.meikel.dmrl.taglib.properties.PrintAllTag</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<description>
+				Name of the Ivy variable.
+			</description>
+			<name>var</name>
+			<required>true</required>
+		</attribute>
+		<attribute>
+			<description>
+				Set a maximum selectable date as a string in the current dateFormat, or a number of days from today (e.g. +7) or a string of values and periods ('y' for years, 'm' for months, 'w' for weeks, 'd' for days, e.g. '+1m +1w').
+			</description>
+			<name>maxDate</name>
+			<required>false</required>
+		</attribute>
+		<attribute>
+			<description>
+				Set a minimum selectable date as a string in the current dateFormat, or a number of days from today (e.g. +7) or a string of values and periods ('y' for years, 'm' for months, 'w' for weeks, 'd' for days, e.g. '-1y -1m').
+			</description>
+			<name>minDate</name>
+			<required>false</required>
+		</attribute>
+		<attribute>
+			<description>
+				Set how many months to show at once. The value can be a straight integer, or can be a two-element array to define the number of rows and columns to display. Example: 3 or [2, 3]
+			</description>
+			<name>numberOfMonths</name>
+			<required>false</required>
+		</attribute>
+		<example>
+			&lt;cbsgui:calendar var="temp.str2" &gt;&lt;/cbsgui:calendar&gt;
+		</example>
+	</tag>
+</taglib>

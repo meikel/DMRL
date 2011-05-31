@@ -8,6 +8,7 @@
 	<name>at.meikel.dmrl.reactor</name>
 	<modules>
 		<module>at.meikel.dmrl.webapp</module>
+		<module>at.meikel.dmrl.taglib</module>
 		<module>at.meikel.dmrl.server</module>
 	</modules>
 </project>
