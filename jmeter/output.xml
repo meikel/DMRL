@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="377" lt="101" ts="1305003743752" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="101" lt="101" ts="1305003743752" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="276" lt="276" ts="1305003743853" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="190" lt="51" ts="1305003744132" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="51" lt="51" ts="1305003744132" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="139" lt="139" ts="1305003744183" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="191" lt="51" ts="1305003744324" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="51" lt="51" ts="1305003744324" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="140" lt="140" ts="1305003744375" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="201" lt="51" ts="1305003744517" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="51" lt="51" ts="1305003744517" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="150" lt="150" ts="1305003744568" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="191" lt="52" ts="1305003744719" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="52" lt="52" ts="1305003744719" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="139" lt="139" ts="1305003744771" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="191" lt="51" ts="1305003744912" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="51" lt="51" ts="1305003744912" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="140" lt="140" ts="1305003744963" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="190" lt="51" ts="1305003745105" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="51" lt="51" ts="1305003745105" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="139" lt="139" ts="1305003745156" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="191" lt="51" ts="1305003745297" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="51" lt="51" ts="1305003745297" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="139" lt="139" ts="1305003745349" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="191" lt="51" ts="1305003745490" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="51" lt="51" ts="1305003745490" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="140" lt="140" ts="1305003745541" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="190" lt="50" ts="1305003745683" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="51" lt="50" ts="1305003745683" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="139" lt="139" ts="1305003745734" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+
+<httpSample t="435" lt="147" ts="1305004252480" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="147" lt="147" ts="1305004252480" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="287" lt="287" ts="1305004252628" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="212" lt="67" ts="1305004252928" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="67" lt="67" ts="1305004252928" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="145" lt="145" ts="1305004252995" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="197" lt="51" ts="1305004253143" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="51" lt="51" ts="1305004253143" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="146" lt="146" ts="1305004253194" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="197" lt="51" ts="1305004253343" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="51" lt="51" ts="1305004253343" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="145" lt="145" ts="1305004253395" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="198" lt="52" ts="1305004253542" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="52" lt="52" ts="1305004253542" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="146" lt="146" ts="1305004253594" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="198" lt="52" ts="1305004253742" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="52" lt="52" ts="1305004253742" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="146" lt="146" ts="1305004253794" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="197" lt="51" ts="1305004253942" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="51" lt="51" ts="1305004253942" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="145" lt="145" ts="1305004253994" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="196" lt="51" ts="1305004254141" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="51" lt="51" ts="1305004254141" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="145" lt="145" ts="1305004254192" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="204" lt="50" ts="1305004254340" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="50" lt="50" ts="1305004254340" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="153" lt="153" ts="1305004254391" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="197" lt="52" ts="1305004254546" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="52" lt="52" ts="1305004254546" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="145" lt="145" ts="1305004254598" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+
+<httpSample t="391" lt="110" ts="1305004398362" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="110" lt="110" ts="1305004398362" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="280" lt="280" ts="1305004398473" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="195" lt="52" ts="1305004398756" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="52" lt="52" ts="1305004398756" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="143" lt="143" ts="1305004398808" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="194" lt="51" ts="1305004398953" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="51" lt="51" ts="1305004398953" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="143" lt="143" ts="1305004399004" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="196" lt="52" ts="1305004399149" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="52" lt="52" ts="1305004399149" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="144" lt="144" ts="1305004399201" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="194" lt="51" ts="1305004399347" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="51" lt="51" ts="1305004399347" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="143" lt="143" ts="1305004399398" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="193" lt="50" ts="1305004399544" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="51" lt="50" ts="1305004399544" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="142" lt="142" ts="1305004399595" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="233" lt="89" ts="1305004399739" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="89" lt="89" ts="1305004399739" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="144" lt="144" ts="1305004399828" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="195" lt="52" ts="1305004399974" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="52" lt="52" ts="1305004399974" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="143" lt="143" ts="1305004400026" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="195" lt="52" ts="1305004400171" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="52" lt="52" ts="1305004400171" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="143" lt="143" ts="1305004400223" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="194" lt="51" ts="1305004400368" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="51" lt="51" ts="1305004400368" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="143" lt="143" ts="1305004400419" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+
+<httpSample t="390" lt="104" ts="1305004414061" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="104" lt="104" ts="1305004414061" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="286" lt="286" ts="1305004414165" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="192" lt="51" ts="1305004414453" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="51" lt="51" ts="1305004414453" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="140" lt="140" ts="1305004414505" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="214" lt="74" ts="1305004414647" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="74" lt="74" ts="1305004414647" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="140" lt="140" ts="1305004414721" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="191" lt="50" ts="1305004414864" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="50" lt="50" ts="1305004414864" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="140" lt="140" ts="1305004414915" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="191" lt="51" ts="1305004415057" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="51" lt="51" ts="1305004415057" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="140" lt="140" ts="1305004415108" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="191" lt="51" ts="1305004415250" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="51" lt="51" ts="1305004415250" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="140" lt="140" ts="1305004415301" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="192" lt="52" ts="1305004415443" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="52" lt="52" ts="1305004415443" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="140" lt="140" ts="1305004415495" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="201" lt="53" ts="1305004415637" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="53" lt="53" ts="1305004415637" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="148" lt="148" ts="1305004415690" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="192" lt="51" ts="1305004415840" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="51" lt="51" ts="1305004415840" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="141" lt="141" ts="1305004415891" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="191" lt="51" ts="1305004416035" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="51" lt="51" ts="1305004416035" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="140" lt="140" ts="1305004416086" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+
+<httpSample t="2337" lt="0" ts="1305004427174" s="false" lb="HTTP Request" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: www.xdmrl.de" tn="index.jsp 1-1" dt="text" by="1281"/>
+<httpSample t="0" lt="0" ts="1305004429514" s="false" lb="HTTP Request" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: www.xdmrl.de" tn="index.jsp 1-1" dt="text" by="1281"/>
+<httpSample t="0" lt="0" ts="1305004429528" s="false" lb="HTTP Request" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: www.xdmrl.de" tn="index.jsp 1-1" dt="text" by="1281"/>
+<httpSample t="1" lt="0" ts="1305004429530" s="false" lb="HTTP Request" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: www.xdmrl.de" tn="index.jsp 1-1" dt="text" by="1281"/>
+<httpSample t="1" lt="0" ts="1305004429534" s="false" lb="HTTP Request" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: www.xdmrl.de" tn="index.jsp 1-1" dt="text" by="1281"/>
+<httpSample t="0" lt="0" ts="1305004429537" s="false" lb="HTTP Request" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: www.xdmrl.de" tn="index.jsp 1-1" dt="text" by="1281"/>
+<httpSample t="1" lt="0" ts="1305004429539" s="false" lb="HTTP Request" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: www.xdmrl.de" tn="index.jsp 1-1" dt="text" by="1281"/>
+<httpSample t="0" lt="0" ts="1305004429542" s="false" lb="HTTP Request" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: www.xdmrl.de" tn="index.jsp 1-1" dt="text" by="1281"/>
+<httpSample t="1" lt="0" ts="1305004429544" s="false" lb="HTTP Request" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: www.xdmrl.de" tn="index.jsp 1-1" dt="text" by="1281"/>
+<httpSample t="0" lt="0" ts="1305004429547" s="false" lb="HTTP Request" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: www.xdmrl.de" tn="index.jsp 1-1" dt="text" by="1281"/>
+
+<httpSample t="2287" lt="0" ts="1305004449688" s="false" lb="HTTP Request" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: www.xdmrl.de" tn="index.jsp 1-1" dt="text" by="1281"/>
+<httpSample t="1" lt="0" ts="1305004451977" s="false" lb="HTTP Request" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: www.xdmrl.de" tn="index.jsp 1-1" dt="text" by="1281"/>
+<httpSample t="0" lt="0" ts="1305004451980" s="false" lb="HTTP Request" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: www.xdmrl.de" tn="index.jsp 1-1" dt="text" by="1281"/>
+<httpSample t="0" lt="0" ts="1305004451982" s="false" lb="HTTP Request" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: www.xdmrl.de" tn="index.jsp 1-1" dt="text" by="1281"/>
+<httpSample t="1" lt="0" ts="1305004451984" s="false" lb="HTTP Request" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: www.xdmrl.de" tn="index.jsp 1-1" dt="text" by="1281"/>
+<httpSample t="1" lt="0" ts="1305004451986" s="false" lb="HTTP Request" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: www.xdmrl.de" tn="index.jsp 1-1" dt="text" by="1281"/>
+<httpSample t="0" lt="0" ts="1305004451989" s="false" lb="HTTP Request" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: www.xdmrl.de" tn="index.jsp 1-1" dt="text" by="1281"/>
+<httpSample t="0" lt="0" ts="1305004451991" s="false" lb="HTTP Request" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: www.xdmrl.de" tn="index.jsp 1-1" dt="text" by="1281"/>
+<httpSample t="0" lt="0" ts="1305004451993" s="false" lb="HTTP Request" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: www.xdmrl.de" tn="index.jsp 1-1" dt="text" by="1281"/>
+<httpSample t="1" lt="0" ts="1305004451995" s="false" lb="HTTP Request" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: www.xdmrl.de" tn="index.jsp 1-1" dt="text" by="1281"/>
+
+<httpSample t="2295" lt="0" ts="1305004524420" s="false" lb="HTTP Request" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: www.xdmrl.de" tn="index.jsp 1-1" dt="text" by="1281"/>
+<httpSample t="0" lt="0" ts="1305004526718" s="false" lb="HTTP Request" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: www.xdmrl.de" tn="index.jsp 1-1" dt="text" by="1281"/>
+<httpSample t="0" lt="0" ts="1305004526721" s="false" lb="HTTP Request" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: www.xdmrl.de" tn="index.jsp 1-1" dt="text" by="1281"/>
+<httpSample t="0" lt="0" ts="1305004526724" s="false" lb="HTTP Request" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: www.xdmrl.de" tn="index.jsp 1-1" dt="text" by="1281"/>
+<httpSample t="1" lt="0" ts="1305004526726" s="false" lb="HTTP Request" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: www.xdmrl.de" tn="index.jsp 1-1" dt="text" by="1281"/>
+<httpSample t="0" lt="0" ts="1305004526729" s="false" lb="HTTP Request" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: www.xdmrl.de" tn="index.jsp 1-1" dt="text" by="1281"/>
+<httpSample t="1" lt="0" ts="1305004526731" s="false" lb="HTTP Request" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: www.xdmrl.de" tn="index.jsp 1-1" dt="text" by="1281"/>
+<httpSample t="0" lt="0" ts="1305004526734" s="false" lb="HTTP Request" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: www.xdmrl.de" tn="index.jsp 1-1" dt="text" by="1281"/>
+<httpSample t="0" lt="0" ts="1305004526736" s="false" lb="HTTP Request" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: www.xdmrl.de" tn="index.jsp 1-1" dt="text" by="1281"/>
+<httpSample t="1" lt="0" ts="1305004526738" s="false" lb="HTTP Request" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: www.xdmrl.de" tn="index.jsp 1-1" dt="text" by="1281"/>
+
+<httpSample t="2288" lt="0" ts="1305004556032" s="false" lb="HTTP Request" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: www.xdmrl.de" tn="index.jsp 1-1" dt="text" by="1281"/>
+<httpSample t="0" lt="0" ts="1305004558324" s="false" lb="HTTP Request" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: www.xdmrl.de" tn="index.jsp 1-1" dt="text" by="1281"/>
+<httpSample t="0" lt="0" ts="1305004558326" s="false" lb="HTTP Request" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: www.xdmrl.de" tn="index.jsp 1-1" dt="text" by="1281"/>
+<httpSample t="1" lt="0" ts="1305004558328" s="false" lb="HTTP Request" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: www.xdmrl.de" tn="index.jsp 1-1" dt="text" by="1281"/>
+<httpSample t="1" lt="0" ts="1305004558332" s="false" lb="HTTP Request" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: www.xdmrl.de" tn="index.jsp 1-1" dt="text" by="1281"/>
+<httpSample t="0" lt="0" ts="1305004558335" s="false" lb="HTTP Request" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: www.xdmrl.de" tn="index.jsp 1-1" dt="text" by="1281"/>
+<httpSample t="1" lt="0" ts="1305004558337" s="false" lb="HTTP Request" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: www.xdmrl.de" tn="index.jsp 1-1" dt="text" by="1281"/>
+<httpSample t="0" lt="0" ts="1305004558340" s="false" lb="HTTP Request" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: www.xdmrl.de" tn="index.jsp 1-1" dt="text" by="1281"/>
+<httpSample t="1" lt="0" ts="1305004558342" s="false" lb="HTTP Request" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: www.xdmrl.de" tn="index.jsp 1-1" dt="text" by="1281"/>
+<httpSample t="0" lt="0" ts="1305004558345" s="false" lb="HTTP Request" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: www.xdmrl.de" tn="index.jsp 1-1" dt="text" by="1281"/>
+
+<httpSample t="368" lt="100" ts="1305004581489" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="100" lt="100" ts="1305004581489" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="268" lt="268" ts="1305004581589" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="186" lt="51" ts="1305004581859" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="51" lt="51" ts="1305004581859" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="135" lt="135" ts="1305004581910" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="193" lt="51" ts="1305004582047" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="51" lt="51" ts="1305004582047" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="142" lt="142" ts="1305004582098" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="186" lt="50" ts="1305004582242" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="50" lt="50" ts="1305004582242" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="136" lt="136" ts="1305004582292" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="188" lt="51" ts="1305004582430" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="51" lt="51" ts="1305004582430" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="137" lt="137" ts="1305004582481" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="187" lt="51" ts="1305004582620" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="51" lt="51" ts="1305004582620" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="136" lt="136" ts="1305004582671" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="188" lt="52" ts="1305004582809" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="52" lt="52" ts="1305004582809" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="136" lt="136" ts="1305004582861" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="187" lt="51" ts="1305004582999" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="51" lt="51" ts="1305004582999" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="136" lt="136" ts="1305004583050" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="186" lt="51" ts="1305004583188" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="51" lt="51" ts="1305004583188" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="135" lt="135" ts="1305004583239" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="187" lt="51" ts="1305004583376" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="51" lt="51" ts="1305004583376" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="136" lt="136" ts="1305004583427" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+
+<httpSample t="393" lt="102" ts="1305004651369" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="102" lt="102" ts="1305004651369" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="291" lt="291" ts="1305004651471" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="198" lt="51" ts="1305004651764" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="51" lt="51" ts="1305004651764" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="147" lt="147" ts="1305004651815" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="208" lt="60" ts="1305004651964" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="60" lt="60" ts="1305004651964" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="148" lt="148" ts="1305004652024" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="198" lt="50" ts="1305004652174" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="50" lt="50" ts="1305004652174" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="148" lt="148" ts="1305004652224" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="208" lt="51" ts="1305004652374" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="51" lt="51" ts="1305004652374" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="157" lt="157" ts="1305004652425" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="198" lt="51" ts="1305004652584" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="51" lt="51" ts="1305004652584" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="147" lt="147" ts="1305004652635" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="199" lt="51" ts="1305004652784" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="51" lt="51" ts="1305004652784" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="147" lt="147" ts="1305004652836" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="199" lt="51" ts="1305004652985" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="51" lt="51" ts="1305004652985" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="148" lt="148" ts="1305004653036" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="199" lt="51" ts="1305004653186" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="51" lt="51" ts="1305004653186" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="148" lt="148" ts="1305004653237" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="198" lt="51" ts="1305004653387" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="51" lt="51" ts="1305004653387" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="147" lt="147" ts="1305004653438" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+
+<httpSample t="382" lt="100" ts="1305004687966" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="100" lt="100" ts="1305004687966" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="282" lt="282" ts="1305004688066" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="197" lt="51" ts="1305004688350" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="51" lt="51" ts="1305004688350" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="146" lt="146" ts="1305004688401" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="194" lt="51" ts="1305004688549" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="51" lt="51" ts="1305004688549" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="143" lt="143" ts="1305004688600" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="194" lt="51" ts="1305004688745" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="51" lt="51" ts="1305004688745" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="143" lt="143" ts="1305004688796" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="197" lt="54" ts="1305004688942" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="54" lt="54" ts="1305004688942" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="143" lt="143" ts="1305004688996" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="197" lt="53" ts="1305004689141" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="53" lt="53" ts="1305004689141" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="144" lt="144" ts="1305004689194" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="216" lt="52" ts="1305004689339" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="52" lt="52" ts="1305004689339" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="164" lt="164" ts="1305004689391" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="194" lt="51" ts="1305004689557" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="51" lt="51" ts="1305004689557" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="143" lt="143" ts="1305004689608" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="195" lt="52" ts="1305004689754" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="52" lt="52" ts="1305004689754" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="143" lt="143" ts="1305004689806" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+<httpSample t="194" lt="50" ts="1305004689951" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="500">
+  <httpSample t="50" lt="50" ts="1305004689951" s="true" lb="http://www.dmrl.de/index.jsp" rc="302" rm="Found" tn="" dt="text" by="226"/>
+  <httpSample t="143" lt="143" ts="1305004690002" s="true" lb="http://dmrl.meikel.cloudbees.net/index.jsp" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+</httpSample>
+
+<httpSample t="288" lt="288" ts="1305004726730" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+<httpSample t="144" lt="144" ts="1305004727020" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+<httpSample t="144" lt="144" ts="1305004727165" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+<httpSample t="144" lt="144" ts="1305004727311" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+<httpSample t="144" lt="144" ts="1305004727457" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+<httpSample t="144" lt="144" ts="1305004727602" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+<httpSample t="144" lt="144" ts="1305004727748" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+<httpSample t="161" lt="161" ts="1305004727894" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+<httpSample t="165" lt="165" ts="1305004728056" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+<httpSample t="143" lt="143" ts="1305004728223" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+
+<httpSample t="302" lt="302" ts="1305004906867" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+<httpSample t="143" lt="143" ts="1305004907183" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+<httpSample t="143" lt="143" ts="1305004907328" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+<httpSample t="144" lt="144" ts="1305004907473" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+<httpSample t="143" lt="143" ts="1305004907619" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+<httpSample t="144" lt="144" ts="1305004907764" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+<httpSample t="144" lt="144" ts="1305004907910" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+<httpSample t="142" lt="142" ts="1305004908056" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+<httpSample t="143" lt="142" ts="1305004908201" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+<httpSample t="143" lt="143" ts="1305004908346" s="true" lb="HTTP Request" rc="200" rm="OK" tn="index.jsp 1-1" dt="text" by="274"/>
+
+</testResults>

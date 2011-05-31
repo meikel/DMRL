@@ -1,0 +1,55 @@
+2011/05/10 07:21:37 INFO  - jmeter.util.JMeterUtils: Setting Locale to de_DE 
+2011/05/10 07:21:37 WARN  - jmeter.util.JMeterUtils: Could not find resources for 'de_DE', using 'de' 
+2011/05/10 07:21:37 INFO  - jmeter.JMeter: Loading user properties from: C:\jakarta-jmeter-2.4\bin\user.properties 
+2011/05/10 07:21:37 INFO  - jmeter.JMeter: Loading system properties from: C:\jakarta-jmeter-2.4\bin\system.properties 
+2011/05/10 07:21:37 INFO  - jmeter.JMeter: Copyright (c) 1998-2010 The Apache Software Foundation 
+2011/05/10 07:21:37 INFO  - jmeter.JMeter: Version 2.4 r961953 
+2011/05/10 07:21:37 INFO  - jmeter.JMeter: java.version=1.6.0_22 
+2011/05/10 07:21:37 INFO  - jmeter.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM 
+2011/05/10 07:21:37 INFO  - jmeter.JMeter: os.name=Windows Vista 
+2011/05/10 07:21:37 INFO  - jmeter.JMeter: os.arch=amd64 
+2011/05/10 07:21:37 INFO  - jmeter.JMeter: os.version=6.0 
+2011/05/10 07:21:37 INFO  - jmeter.JMeter: file.encoding=Cp1252 
+2011/05/10 07:21:37 INFO  - jmeter.JMeter: Default Locale=Deutsch (Deutschland) 
+2011/05/10 07:21:37 INFO  - jmeter.JMeter: JMeter  Locale=Deutsch (Deutschland) 
+2011/05/10 07:21:37 INFO  - jmeter.JMeter: JMeterHome=C:\jakarta-jmeter-2.4 
+2011/05/10 07:21:37 INFO  - jmeter.JMeter: user.dir  =C:\eclipse2\workspace\at.meikel.dmrl.reactor\jmeter 
+2011/05/10 07:21:37 INFO  - jmeter.JMeter: PWD       =C:\eclipse2\workspace\at.meikel.dmrl.reactor\jmeter 
+2011/05/10 07:21:37 INFO  - jmeter.JMeter: IP: 192.168.178.21 Name: meikel-PC FullName: meikel-PC 
+2011/05/10 07:21:37 INFO  - jmeter.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties 
+2011/05/10 07:21:38 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must contain the string: '.functions.' 
+2011/05/10 07:21:38 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must not contain the string: '.gui.' 
+2011/05/10 07:21:38 INFO  - jmeter.JMeter: Loading file: DMRL.jmx 
+2011/05/10 07:21:38 INFO  - jmeter.save.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2 
+2011/05/10 07:21:38 INFO  - jmeter.save.SaveService: Using SaveService properties file encoding UTF-8 
+2011/05/10 07:21:38 INFO  - jmeter.save.SaveService: Using SaveService properties file version 959116 
+2011/05/10 07:21:38 INFO  - jmeter.save.SaveService: Using SaveService properties version 2.1 
+2011/05/10 07:21:38 INFO  - jmeter.save.SaveService: All converter versions present and correct 
+2011/05/10 07:21:38 INFO  - jmeter.util.BSFTestElement: Registering JMeter version of JavaScript engine as work-round for BSF-22 
+2011/05/10 07:21:38 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Cannot find .className property for htmlParser, using default 
+2011/05/10 07:21:38 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/html is  
+2011/05/10 07:21:38 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xhtml+xml is  
+2011/05/10 07:21:38 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xml is  
+2011/05/10 07:21:38 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/xml is  
+2011/05/10 07:21:38 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser 
+2011/05/10 07:21:38 INFO  - jmeter.protocol.http.sampler.HTTPSampler: Maximum connection retries = 10 
+2011/05/10 07:21:38 INFO  - jmeter.services.FileServer: Default base=C:\eclipse2\workspace\at.meikel.dmrl.reactor\jmeter 
+2011/05/10 07:21:38 INFO  - jmeter.services.FileServer: Set new base=C:\eclipse2\workspace\at.meikel.dmrl.reactor\jmeter 
+2011/05/10 07:21:39 INFO  - jmeter.samplers.SampleResult: Note: Sample TimeStamps are START times 
+2011/05/10 07:21:39 INFO  - jmeter.samplers.SampleResult: sampleresult.default.encoding is set to ISO-8859-1 
+2011/05/10 07:21:46 INFO  - jmeter.engine.StandardJMeterEngine: Listeners will be started after enabling running version 
+2011/05/10 07:21:46 INFO  - jmeter.engine.StandardJMeterEngine: To revert to the earlier behaviour, define jmeterengine.startlistenerslater=false 
+2011/05/10 07:21:46 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2011/05/10 07:21:46 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2011/05/10 07:21:46 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group index.jsp. 
+2011/05/10 07:21:46 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2011/05/10 07:21:46 INFO  - jmeter.threads.JMeterThread: jmeterthread.startearlier=true (see jmeter.properties) 
+2011/05/10 07:21:46 INFO  - jmeter.threads.JMeterThread: Running PostProcessors in forward order 
+2011/05/10 07:21:46 INFO  - jmeter.engine.StandardJMeterEngine: All threads have been started 
+2011/05/10 07:21:46 INFO  - jmeter.threads.JMeterThread: Thread started: index.jsp 1-1 
+2011/05/10 07:21:48 INFO  - jmeter.threads.JMeterThread: Thread finished: index.jsp 1-1 
+2011/05/10 07:21:48 INFO  - jmeter.engine.StandardJMeterEngine: Ending thread index.jsp 1-1 
+2011/05/10 07:21:48 INFO  - jmeter.engine.StandardJMeterEngine: Stopping test 
+2011/05/10 07:21:48 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2011/05/10 07:21:48 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2011/05/10 07:21:48 INFO  - jmeter.engine.StandardJMeterEngine: Test has ended 
