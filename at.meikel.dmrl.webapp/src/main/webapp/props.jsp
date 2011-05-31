@@ -1,7 +1,15 @@
+<%@ taglib prefix="properties" uri="http://www.meikel.at/jsp/dmrl/properties" %>
+
 <html>
 <body>
 <h2>Properties</h2>
 <p><%=new java.util.Date()%></p>
+<br/>
+<properties:calendar var="temp.str2" ></properties:calendar>
+<br/>
+<br/>
+<hr />
+<br/>
 <br/>
 <%
 java.util.Properties prop = new java.util.Properties();

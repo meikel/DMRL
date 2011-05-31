@@ -12,8 +12,8 @@
 	<artifactId>at.meikel.dmrl.webapp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>at.meikel.dmrl.webapp Maven Webapp</name>
-	<url>http://maven.apache.org</url>
+	<name>at.meikel.dmrl.webapp</name>
+	<url>http://www.dmrl.de</url>
 	<scm>
 		<connection>scm:git://github.com/meikel/DMRL.git</connection>
 		<developerConnection>scm:git://github.com/meikel/DMRL.git</developerConnection>
@@ -71,7 +71,7 @@
 					<stopKey>jetty:stop</stopKey>
 					<stopPort>9999</stopPort>
 					<webAppConfig>
-						<contextPath>/dmrl</contextPath>
+						<contextPath>/</contextPath>
 					</webAppConfig>
 				</configuration>
 			</plugin>
