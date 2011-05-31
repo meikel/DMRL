@@ -1,0 +1,2 @@
+cd /d c:\eclipse2\workspace\at.meikel.dmrl.reactor\at.meikel.dmrl.webapp
+mvn jetty:run
