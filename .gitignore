@@ -7,3 +7,5 @@ at.meikel.dmrl.server/.project
 
 
 target/
+
+/at.meikel.dmrl.taglib/.checkstyle
