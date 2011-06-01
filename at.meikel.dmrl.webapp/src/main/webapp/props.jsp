@@ -1,9 +1,10 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="properties" uri="http://www.meikel.at/jsp/dmrl/properties" %>
-
 <html>
 <body>
 <h2>Properties</h2>
 <p><%=new java.util.Date()%></p>
+<p><c:out value="tralala" ></c:out></p>
 <br/>
 <properties:calendar var="temp.str2" ></properties:calendar>
 <br/>
