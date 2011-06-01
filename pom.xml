@@ -10,8 +10,8 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	<modules>
-		<module>at.meikel.dmrl.webapp</module>
-		<module>at.meikel.dmrl.taglib</module>
 		<module>at.meikel.dmrl.server</module>
+		<module>at.meikel.dmrl.taglib</module>
+		<module>at.meikel.dmrl.webapp</module>
 	</modules>
 </project>
