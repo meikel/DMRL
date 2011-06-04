@@ -14,6 +14,19 @@
 		<module>at.meikel.dmrl.taglib</module>
 		<module>at.meikel.dmrl.webapp</module>
 	</modules>
+	<description>at.meikel.dmrl.reactor</description>
+	<ciManagement>
+		<system>Jenkins</system>
+		<url>http://www.cloudbees.com</url>
+	</ciManagement>
+	<scm>
+		<connection>scm:git:git://github.com/meikel/DMRL.git</connection>
+		<developerConnection>scm:git:git@github.com:meikel/DMRL.git</developerConnection>
+	</scm>
+	<organization>
+		<name>Meikel</name>
+		<url>http://www.meikel.at</url>
+	</organization>
 	<build>
 		<plugins>
 			<plugin>

@@ -13,7 +13,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<name>at.meikel.dmrl.webapp</name>
-	<url>http://www.dmrl.de</url>
+	<description>at.meikel.dmrl.webapp</description>
 	<scm>
 		<connection>scm:git://github.com/meikel/DMRL.git</connection>
 		<developerConnection>scm:git://github.com/meikel/DMRL.git</developerConnection>

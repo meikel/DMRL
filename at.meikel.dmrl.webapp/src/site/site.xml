@@ -1,0 +1,19 @@
+<project xmlns="http://maven.apache.org/DECORATION/1.1.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/DECORATION/1.1.0 http://maven.apache.org/xsd/decoration-1.1.0.xsd"
+	name="at.meikel.dmrl">
+	<publishDate position="left" />
+	<version position="left" />
+	<poweredBy>
+		<logo name="Maven" href="http://maven.apache.org/"
+			img="http://maven.apache.org/images/logos/maven-feather.png" />
+	</poweredBy>
+	<body>
+		<links>
+			<item name="www.meikel.at" href="http://www.meikel.at" />
+		</links>
+		<menu ref="modules" />
+		<menu ref="reports" />
+		<menu ref="parent" />
+	</body>
+</project>
