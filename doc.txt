@@ -1,2 +1,14 @@
-cd /d c:\eclipse2\workspace\at.meikel.dmrl.reactor\at.meikel.dmrl.webapp
-mvn jetty:run
+cd /d <base>\at.meikel.dmrl.reactor
+mvn package
+
+cd /d <base>\at.meikel.dmrl.reactor\at.meikel.dmrl.webapp
+mvn  [ -Djetty.port=4711 ]  jetty:run
+
+navigate browser to http://localhost:8080/index.jsp
+
+mvn jetty:stop
+
+bees app:deploy -a meikel/dmrl target\at.meikel.dmrl.webapp.war
+bees app:restart -f -a meikel/dmrl
+
+navigate browser to http://dmrl.meikel.cloudbees.net/index.jsp
