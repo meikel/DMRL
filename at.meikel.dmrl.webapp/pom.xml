@@ -40,6 +40,7 @@
 				<artifactId>maven-war-plugin</artifactId>
 				<version>2.1</version>
 				<configuration>
+					<!-- <archiveClasses>true</archiveClasses> -->
 					<archive>
 						<manifest>
 							<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
@@ -79,19 +80,20 @@
 			<artifactId>at.meikel.dmrl.taglib</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 			<type>war</type>
+			<scope>runtime</scope>
 		</dependency>
 		<!-- begin - jstl dependency-->
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>jstl</artifactId>
 			<version>1.1.2</version>
-			<scope>provided</scope>
+			<!-- <scope>provided</scope> -->
 		</dependency>
 		<dependency>
 			<groupId>taglibs</groupId>
 			<artifactId>standard</artifactId>
 			<version>1.1.2</version>
-			<scope>provided</scope>
+			<!-- <scope>provided</scope> -->
 		</dependency>
 		<!-- end - jstl dependency-->
 		<dependency>
