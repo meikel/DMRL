@@ -27,6 +27,13 @@
 		<name>Meikel</name>
 		<url>http://www.meikel.at</url>
 	</organization>
+	<distributionManagement>
+		<site>
+			<id>ftp.meikel.at</id>
+			<name>ftp.meikel.at</name>
+			<url>ftp://ftp.meikel.at</url>
+		</site>
+	</distributionManagement>
 	<build>
 		<plugins>
 			<plugin>

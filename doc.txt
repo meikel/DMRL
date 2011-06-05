@@ -12,3 +12,7 @@ bees app:deploy -a meikel/dmrl target\at.meikel.dmrl.webapp.war
 bees app:restart -f -a meikel/dmrl
 
 navigate browser to http://dmrl.meikel.cloudbees.net/index.jsp
+
+---
+
+mvn --settings ./jenkins-settings.xml -Denv.site.username=mimimi -Denv.site.password=tralala site:deploy
