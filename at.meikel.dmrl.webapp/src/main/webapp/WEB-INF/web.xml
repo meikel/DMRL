@@ -31,7 +31,7 @@
 		<taglib-location>/WEB-INF/c.tld</taglib-location>
 	</taglib>
 	<taglib>
-		<taglib-uri>http://www.meikel.at/jsp/dmrl/properties</taglib-uri>
+		<taglib-uri>http://www.meikel.at/taglib/properties</taglib-uri>
 		<taglib-location>/WEB-INF/properties.tld</taglib-location>
 	</taglib>
 </web-app>

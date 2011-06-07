@@ -21,7 +21,8 @@
 	</ciManagement>
 	<scm>
 		<connection>scm:git:git://github.com/meikel/DMRL.git</connection>
-		<developerConnection>scm:git:git@github.com:meikel/DMRL.git</developerConnection>
+		<developerConnection>scm:git:git@github.com:meikel/DMRL.git
+		</developerConnection>
 	</scm>
 	<organization>
 		<name>Meikel</name>
@@ -98,6 +99,11 @@
 							<groupId>net.sourceforge.maven-taglib</groupId>
 							<artifactId>maven-taglib-plugin</artifactId>
 							<version>2.4</version>
+							<!--
+								<configuration>
+								<taglib.src.dir>src/main/webapp/WEB-INF</taglib.src.dir>
+								</configuration>
+							-->
 						</plugin>
 					</reportPlugins>
 				</configuration>

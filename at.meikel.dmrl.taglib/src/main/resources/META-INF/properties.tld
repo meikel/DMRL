@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 	<!--
-		This file is needed for using overlays with jetty:run
+		This file is needed for generating documentation with taglib:taglibdoc
 	-->
 
 <taglib xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
