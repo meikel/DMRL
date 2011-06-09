@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faqs xmlns="http://maven.apache.org/FML/1.0.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/FML/1.0.1 http://maven.apache.org/xsd/fml-1.0.1.xsd"
+	title="Frequently Asked Questions" toplink="false">
+
+	<part id="general">
+		<title>General</title>
+
+		<faq id="whats-dmrl">
+			<question>What is DMRL?</question>
+			<answer>
+				<p>DMRL is an open source software which provides the Deutsche
+					Minigolf Rangliste as a RESTful service.</p>
+			</answer>
+		</faq>
+
+		<faq id="why-dmrl">
+			<question>Why DMRL?</question>
+			<answer>
+				<p>There are some different reasons:</p>
+				<ul>
+					<li>For a while I wanted to develop an open source software since I
+						like the spirit and believe in the high quality of that projects.
+					</li>
+					<li>As a reference project or work sample for a potential employer.
+					</li>
+					<li>
+						I'd like to have a crack at using services like
+						<a href="https://github.com/">Github</a>
+						and
+						<a href="http://www.cloudbees.com/">Cloudbees</a>
+						and need a
+						<em>real</em>
+						project for that.
+					</li>
+					<li>I run a web site about my Minigolf club and want to display a
+						ranking of all the players of my club on that web site.</li>
+				</ul>
+			</answer>
+		</faq>
+
+		<faq id="how-dmrl">
+			<question>How does DMRL work?</question>
+			<answer>
+				<p>
+					The DMRL ist not responsible for computing the Deutsche Minigolf
+					Rangliste. DMRL retrieves the Deutsche Minigolf Rangliste from the
+					web site of
+					<a href="http://www.minigolfsport.de/">Deutscher Minigolfsport Verband</a>
+					which is published there in a human readable format. DMRL reads
+					that information and publishes it as a RESTful service.
+				</p>
+			</answer>
+		</faq>
+	</part>
+
+	<!--
+		<part id="install"> <title>Installation</title> <faq id="how-install">
+		<question> How do I install Foo? </question> <answer> <p>some markup
+		goes here</p> </answer> </faq> </part>
+	-->
+
+</faqs>

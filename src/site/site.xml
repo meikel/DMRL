@@ -12,6 +12,10 @@
 		<links>
 			<item name="www.meikel.at" href="http://www.meikel.at" />
 		</links>
+		<menu name="Documentation">
+			<item name="FAQ" href="faq.html" />
+		</menu>
+
 		<menu ref="modules" />
 		<menu ref="reports" />
 		<menu ref="parent" />

@@ -12,8 +12,8 @@
 	<artifactId>at.meikel.dmrl.webapp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>at.meikel.dmrl.webapp</name>
-	<description>at.meikel.dmrl.webapp</description>
+	<name>Deutsche Minigolf Rangliste (Module Webapp)</name>
+	<description>This module is responsible for making the service available in a J2EE web container.</description>
 	<scm>
 		<connection>scm:git://github.com/meikel/DMRL.git</connection>
 		<developerConnection>scm:git://github.com/meikel/DMRL.git</developerConnection>

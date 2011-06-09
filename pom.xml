@@ -5,7 +5,7 @@
 	<artifactId>at.meikel.dmrl.reactor</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<name>at.meikel.dmrl.reactor</name>
+	<name>Deutsche Minigolf Rangliste (Reactor)</name>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
@@ -14,7 +14,7 @@
 		<module>at.meikel.dmrl.taglib</module>
 		<module>at.meikel.dmrl.webapp</module>
 	</modules>
-	<description>at.meikel.dmrl.reactor</description>
+	<description>The parent module containing all modules to allow a reactor build.</description>
 	<ciManagement>
 		<system>Jenkins</system>
 		<url>http://www.cloudbees.com</url>

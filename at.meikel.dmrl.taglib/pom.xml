@@ -10,8 +10,7 @@
 	<artifactId>at.meikel.dmrl.taglib</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>at.meikel.dmrl.taglib</name>
-	<description>at.meikel.dmrl.taglib</description>
+	<name>Deutsche Minigolf Rangliste (Module Taglib)</name>
 	<dependencies>
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -26,6 +25,7 @@
 			<scope>provided</scope>
 		</dependency>
 	</dependencies>
+	<description>The Taglib module provides some tags for handling property files. I need this functionality for retrieving build and version information from the manifest file to display them on the JSPs.</description>
 	<build>
 		<plugins>
 			<plugin>
