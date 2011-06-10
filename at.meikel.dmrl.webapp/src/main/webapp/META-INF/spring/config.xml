@@ -10,20 +10,20 @@
 	<!-- Enable annotation scanning. -->
 	<context:component-scan base-package="at.meikel.dmrl.webapp.rest" />
 
-	<!-- Define the OXM marshaller which is used to convert the Objects <-> XML. -->
-	<bean id="oxmMarshaller" class="org.springframework.oxm.xstream.XStreamMarshaller" />
-
-	<bean id="marshallingHttpMessageConverter"
-		class="org.springframework.http.converter.xml.MarshallingHttpMessageConverter">
-		<property name="marshaller" ref="oxmMarshaller" />
-		<property name="unmarshaller" ref="oxmMarshaller" />
+	<bean id="jsonConverter"
+		class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">
+		<property name="supportedMediaTypes" value="application/json" />
 	</bean>
 
-	<!-- Required for REST services in order to bind the return value to the ResponseBody. -->
-	<bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+	<!--
+		Required for REST services in order to bind the return value to the
+		ResponseBody.
+	-->
+	<bean
+		class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
 		<property name="messageConverters">
 			<util:list id="beanList">
-				<ref bean="marshallingHttpMessageConverter" />
+				<ref bean="jsonConverter" />
 			</util:list>
 		</property>
 	</bean>
