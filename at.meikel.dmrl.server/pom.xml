@@ -2,14 +2,14 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<artifactId>at.meikel.dmrl.reactor</artifactId>
+		<artifactId>at.meikel.dmrl.root</artifactId>
 		<groupId>at.meikel.dmrl</groupId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<groupId>at.meikel.dmrl</groupId>
 	<artifactId>at.meikel.dmrl.server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Deutsche Minigolf Rangliste (Module Server)</name>
+	<name>DMRL (Server)</name>
 	<description>The Server module contains the business logic of the software: periodically retrieving the official ranking list, transforming it into an internal representation, organizing the data and exporting it. When run in a J2EE web server this module is hosted by the webapp.</description>
 	<dependencies>
 		<dependency>

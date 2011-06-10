@@ -4,7 +4,7 @@
 	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<artifactId>at.meikel.dmrl.reactor</artifactId>
+		<artifactId>at.meikel.dmrl.root</artifactId>
 		<groupId>at.meikel.dmrl</groupId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
@@ -12,7 +12,7 @@
 	<artifactId>at.meikel.dmrl.webapp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>Deutsche Minigolf Rangliste (Module Webapp)</name>
+	<name>DMRL (Webapp)</name>
 	<description>This module is responsible for making the service available in a J2EE web container.</description>
 	<properties>
 		<jackson.version>1.8.1</jackson.version>

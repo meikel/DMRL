@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<artifactId>at.meikel.dmrl.reactor</artifactId>
+		<artifactId>at.meikel.dmrl.root</artifactId>
 		<groupId>at.meikel.dmrl</groupId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
@@ -10,7 +10,7 @@
 	<artifactId>at.meikel.dmrl.taglib</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Deutsche Minigolf Rangliste (Module Taglib)</name>
+	<name>DMRL (Taglib)</name>
 	<dependencies>
 		<dependency>
 			<groupId>javax.servlet</groupId>
