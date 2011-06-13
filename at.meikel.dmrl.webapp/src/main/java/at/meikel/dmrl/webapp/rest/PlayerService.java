@@ -23,6 +23,8 @@ public class PlayerService {
 				"HBSV", "10.123"));
 		result.add(new Player("47110815", "Weihnachtsmann", "SM",
 				"SG Weiterstadt", "HBSV", "1.234"));
+		result.add(new Player("110112", "Lustig, Peter", "JM",
+				"SG Weiterstadt", "HBSV", "8.901"));
 
 		return result;
 	}
