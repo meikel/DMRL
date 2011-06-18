@@ -14,7 +14,7 @@ import at.meikel.mgr.model.Player;
 @Controller
 public class PlayerService {
 
-	@RequestMapping(value = "/players", method = RequestMethod.GET)
+	@RequestMapping(value = { "/players", "/players.jsonp" }, method = RequestMethod.GET)
 	@ResponseBody
 	public List<Player> getAllPlayers() {
 		Vector<Player> result = new Vector<Player>();
@@ -29,7 +29,8 @@ public class PlayerService {
 		return result;
 	}
 
-	@RequestMapping(value = "/players/byLicenseId/{licenseId}", method = RequestMethod.GET)
+	@RequestMapping(value = { "/players/byLicenseId/{licenseId}",
+			"/players/byLicenseId/{licenseId}.jsonp" }, method = RequestMethod.GET)
 	@ResponseBody
 	public Player getPlayerByLicenseId(@PathVariable Long licenseId) {
 		Player result = new Player(Long.toString(licenseId), "Osterhase", "H",

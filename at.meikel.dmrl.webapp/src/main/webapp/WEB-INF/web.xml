@@ -8,6 +8,16 @@
 		<param-name>contextConfigLocation</param-name>
 		<param-value>/META-INF/spring/*.xml</param-value>
 	</context-param>
+	<filter>
+		<filter-name>SampleFilter</filter-name>
+		<display-name>SampleFilter</display-name>
+		<description></description>
+		<filter-class>at.meikel.dmrl.webapp.rest.SampleFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>SampleFilter</filter-name>
+		<url-pattern>/rest/*.jsonp</url-pattern>
+	</filter-mapping>
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>

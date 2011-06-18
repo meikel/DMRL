@@ -10,6 +10,8 @@
 
 <h2>API</h2>
 <p><a href="/rest/players">rest/players</a></p>
+<p><a href="/rest/players.jsonp">rest/players.jsonp</a></p>
 <p><a href="/rest/players/byLicenseId/4711">rest/players/byLicenseId/4711</a></p>
+<p><a href="/rest/players/byLicenseId/4711.jsonp">rest/players/byLicenseId/4711.jsonp</a></p>
 </body>
 </html>
