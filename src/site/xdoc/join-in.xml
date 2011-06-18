@@ -29,6 +29,8 @@
 					<li>Clean up the maven pom files.</li>
 					<li>Clean up the project homepage.</li>
 					<li>Finish an initial version of the server module.</li>
+					<li>There is a problem with the deployment of the taglib to the
+						application server which needs to be solved.</li>
 					<li>Implement a basic mechanism for service versioning.</li>
 					<li>Design a logo for the project.</li>
 					<li>
