@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+
+	<properties>
+		<title>at.meikel.dmrl - Join In</title>
+		<author email="meikel@meikel.at">Meikel</author>
+	</properties>
+
+	<body>
+		<section name="Join In">
+			<p>You're interested in participating? No problem, here are some
+				open
+				tasks to be finished.</p>
+		</section>
+
+		<section name="Open tasks">
+			<p>
+				<ul>
+					<li>There is a problem with cross domain scripting which means
+						that
+						an AJAX call from your website to dmrl.de will not succeed.</li>
+					<li>I'd like to have a concept (including a protoype
+						implementation) for a DMRL client which does not need to have
+						Java-Scipt enabled on the browser.</li>
+					<li>A user documentation is needed.</li>
+					<li>Translation of the user documentation to (at least) german
+						language.</li>
+					<li>Clean up the maven pom files.</li>
+					<li>Clean up the project homepage.</li>
+					<li>Finish an initial version of the server module.</li>
+					<li>Implement a basic mechanism for service versioning.</li>
+					<li>Design a logo for the project.</li>
+					<li>
+						Do some merchanidsing and create some advertised products
+						including
+						<ul>
+							<li>T-Shirt,</li>
+							<li>Coffee mug,</li>
+							<li>Minigolf case and</li>
+							<li>Minigolf ball.</li>
+						</ul>
+					</li>
+				</ul>
+			</p>
+		</section>
+
+	</body>
+
+</document>

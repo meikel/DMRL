@@ -17,7 +17,7 @@
 		<faq id="why-dmrl">
 			<question>Why DMRL?</question>
 			<answer>
-				<p>There are some different reasons:</p>
+				<p>There is a number of reasons:</p>
 				<ul>
 					<li>For a while I wanted to develop an open source software since I
 						like the spirit and believe in the high quality of that projects.
@@ -35,6 +35,10 @@
 					</li>
 					<li>I run a web site about my Minigolf club and want to display a
 						ranking of all the players of my club on that web site.</li>
+					<li>As a working example for all the technologies used in the
+						project (i.e. Maven, Spring, Cloudbees.com). This project gives
+						people a chance to checkout a project which builds successfully
+						and see how everything is put together.</li>
 				</ul>
 			</answer>
 		</faq>
@@ -52,7 +56,39 @@
 				</p>
 			</answer>
 		</faq>
+
+		<faq id="current-state-of-dmrl">
+			<question>What is the current state of DMRL?</question>
+			<answer>
+				<p>You're not interested in the whole technical stuff, you're a user
+					who just wants to display a part of the Deutsche Minigolf Rangliste
+					on your website?</p>
+
+				<p>The bad news is, that currently the project is not so far that
+					you can integrate it into your website. My plan is, that I'll
+					have
+					an initial prototype of the software up and running before
+					friday,
+					15th of july 2011.</p>
+			</answer>
+		</faq>
+
+		<faq id="how-to-join-in">
+			<question>How to join in to development of DMRL?</question>
+			<answer>
+				<p>Currently there is much to be done to complete a basic version of
+					the software. There are not only technical problems to be solved,
+					there is much other stuff, like creating a user documentation.</p>
+
+				<p>
+					If you want to participate just have a look to at
+					<a href="join-in.html">Join in</a>
+					.
+				</p>
+			</answer>
+		</faq>
 	</part>
+
 
 	<!--
 		<part id="install"> <title>Installation</title> <faq id="how-install">
