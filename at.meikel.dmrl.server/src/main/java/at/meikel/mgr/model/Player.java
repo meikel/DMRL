@@ -5,7 +5,7 @@ import java.io.Serializable;
 public class Player implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-	private int passnummer;
+	private String passnummer;
 	private String vorname;
 	private String nachname;
 	private String kategorie;
@@ -15,7 +15,7 @@ public class Player implements Serializable {
 
 	public Player(String passnummer, String name, String kategorie,
 			String verein, String landesverband, String ranglistenwert) {
-		this.passnummer = (int) Double.parseDouble(passnummer);
+		this.passnummer = passnummer;
 		if (name.contains(",")) {
 			this.vorname = name.substring(name.indexOf(", ") + 2);
 			this.nachname = name.substring(0, name.indexOf(", "));
@@ -29,7 +29,7 @@ public class Player implements Serializable {
 		this.ranglistenwert = Double.parseDouble(ranglistenwert);
 	}
 
-	public int getPassnummer() {
+	public String getPassnummer() {
 		return passnummer;
 	}
 

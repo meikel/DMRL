@@ -13,6 +13,10 @@ public class Rangliste {
 		map.put(new Integer(platz), spieler);
 	}
 
+	public int size() {
+		return map.size();
+	}
+
 	public List<Player> find(String verein) {
 		Vector<Player> result = new Vector<Player>();
 		Vector<Integer> keys = new Vector<Integer>(map.keySet());

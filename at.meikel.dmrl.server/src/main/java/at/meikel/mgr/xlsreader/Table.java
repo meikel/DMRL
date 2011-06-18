@@ -149,8 +149,10 @@ public class Table {
 
 	private void computeColumnVirtualIndicesAndHeaders() {
 		String[] skipValues = new String[] { "Platz", "Pass", "Name", "Kat.",
-				"Verein", "LV", "Wert", "Anzahl", "+/- Platz", "+/- Wert",
-				"Max." };
+				"Verein"
+		// , "LV", "Wert", "+/- Platz", "+/- Wert", "Anzahl",
+		// "Strei-cher", "Wer-tung", "Max." 
+				};
 		SortedSet<Integer> physicalIndices = new TreeSet<Integer>();
 		Iterator<Row> rowIterator = rows.iterator();
 		boolean skip = true;

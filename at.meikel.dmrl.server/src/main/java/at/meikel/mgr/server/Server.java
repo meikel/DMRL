@@ -6,7 +6,6 @@ import java.text.SimpleDateFormat;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Date;
-import java.util.List;
 import java.util.Vector;
 
 import org.apache.commons.io.FileUtils;
@@ -17,8 +16,8 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 
 import at.meikel.mgr.httpclient.DataRetriever;
-import at.meikel.mgr.model.Rangliste;
 import at.meikel.mgr.model.Player;
+import at.meikel.mgr.model.Rangliste;
 import at.meikel.mgr.xlsreader.Row;
 import at.meikel.mgr.xlsreader.Table;
 
@@ -35,11 +34,19 @@ public class Server {
 			"yyyyMMdd-HHmmss-'data.xls'");
 	// private static final String URL =
 	// "http://vcrossley.com/sporto/sample.xls";
-	private static final String URL = "http://www.minigolfsport.de/download/rangliste13.xls";
+	private static final String URL = "http://www.minigolfsport.de/download/rangliste23.xls";
 	private static final String SHEET_NAME = "DRL";
 
 	// private static final String PROXY_HOSTNAME = "iproxy";
 	// private static final int PROXY_PORT = 8088;
+
+	public Server() {
+		rangliste = new Rangliste();
+	}
+
+	public Rangliste getRankingList() {
+		return rangliste;
+	}
 
 	public void setBaseDir(String pathname) {
 		File dir;
@@ -79,24 +86,7 @@ public class Server {
 	}
 
 	public void reloadData() {
-		IOFileFilter fileFilter = new AbstractFileFilter() {
-			@Override
-			public boolean accept(File file) {
-				try {
-					DATA_FILE_FORMAT.parse(file.getName());
-					return true;
-				} catch (ParseException e) {
-					LOGGER
-							.warn("'"
-									+ file.getPath()
-									+ "' is not a data file. You should remove that file from the data dir.");
-					return false;
-				}
-			}
-		};
-		@SuppressWarnings("unchecked")
-		Collection<File> allDataFiles = FileUtils.listFiles(dataDir,
-				fileFilter, null);
+		Collection<File> allDataFiles = listAllDataFiles();
 
 		Table table = null;
 		while ((table == null) && (!allDataFiles.isEmpty())) {
@@ -133,13 +123,38 @@ public class Server {
 						e.printStackTrace();
 					}
 				}
-				List<Player> sgw = rangliste.find("SG Weiterstadt 1886");
-				for (Player s : sgw) {
-					System.out.println(s);
-				}
-
 			}
 		}
+	}
+
+	public Collection<File> listAllDataFiles() {
+		return listAllFiles(true);
+	}
+
+	public Collection<File> listAllInvalidFiles() {
+		return listAllFiles(false);
+	}
+
+	private Collection<File> listAllFiles(final boolean valid) {
+		IOFileFilter fileFilter = new AbstractFileFilter() {
+			@Override
+			public boolean accept(File file) {
+				try {
+					DATA_FILE_FORMAT.parse(file.getName());
+					return valid;
+				} catch (ParseException e) {
+					return !valid;
+				}
+			}
+		};
+		@SuppressWarnings("unchecked")
+		Collection<File> files = FileUtils.listFiles(dataDir, fileFilter, null);
+
+		if (files == null) {
+			files = new Vector<File>();
+		}
+
+		return files;
 	}
 
 	private void checkDir(File dir) {
