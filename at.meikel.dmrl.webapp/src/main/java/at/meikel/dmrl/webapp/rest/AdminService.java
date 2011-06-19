@@ -49,6 +49,14 @@ public class AdminService {
 		return result;
 	}
 
+	@RequestMapping(value = ADMIN_PREFIX + "/retrieveAndReloadData", method = RequestMethod.GET)
+	@ResponseBody
+	public void retrieveAndReloadData() {
+		if (server != null) {
+			server.retrieveAndReloadData();
+		}
+	}
+
 	@RequestMapping(value = ADMIN_PREFIX + "/retrieveData", method = RequestMethod.GET)
 	@ResponseBody
 	public String retrieveData() {

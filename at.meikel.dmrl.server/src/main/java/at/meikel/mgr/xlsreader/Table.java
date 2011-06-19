@@ -3,6 +3,7 @@ package at.meikel.mgr.xlsreader;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.PrintStream;
 import java.util.Hashtable;
 import java.util.Iterator;
@@ -31,9 +32,18 @@ public class Table {
 	}
 
 	public static Table read(String filename, String sheetName) {
+		try {
+			return read(new FileInputStream(filename), sheetName);
+		} catch (FileNotFoundException e) {
+			LOGGER.warn("Unable to read file.", e);
+			return null;
+		}
+	}
+
+	public static Table read(InputStream is, String sheetName) {
 		Table result = new Table();
 		try {
-			HSSFWorkbook wb = new HSSFWorkbook(new FileInputStream(filename));
+			HSSFWorkbook wb = new HSSFWorkbook(is);
 			// HSSFSheet sheet = wb.getSheetAt(0);
 			HSSFSheet sheet = wb.getSheet(sheetName);
 			for (int rowIndex = sheet.getFirstRowNum(); rowIndex <= sheet
@@ -84,9 +94,6 @@ public class Table {
 					}
 				}
 			}
-		} catch (FileNotFoundException e) {
-			LOGGER.warn("Unable to read file.", e);
-			return null;
 		} catch (IOException e) {
 			LOGGER.warn("Unable to read file.", e);
 			return null;
@@ -151,8 +158,8 @@ public class Table {
 		String[] skipValues = new String[] { "Platz", "Pass", "Name", "Kat.",
 				"Verein"
 		// , "LV", "Wert", "+/- Platz", "+/- Wert", "Anzahl",
-		// "Strei-cher", "Wer-tung", "Max." 
-				};
+		// "Strei-cher", "Wer-tung", "Max."
+		};
 		SortedSet<Integer> physicalIndices = new TreeSet<Integer>();
 		Iterator<Row> rowIterator = rows.iterator();
 		boolean skip = true;

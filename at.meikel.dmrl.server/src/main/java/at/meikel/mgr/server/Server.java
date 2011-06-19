@@ -1,6 +1,9 @@
 package at.meikel.mgr.server;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Collection;
@@ -54,30 +57,40 @@ public class Server {
 	}
 
 	public void setBaseDir(String pathname) {
-		File dir;
+		try {
+			File dir;
 
-		dir = new File(pathname);
-		checkDir(dir);
-		baseDir = dir;
+			dir = new File(pathname);
+			checkDir(dir);
+			baseDir = dir;
 
-		dir = new File(baseDir, "data");
-		checkDir(dir);
-		dataDir = dir;
+			dir = new File(baseDir, "data");
+			checkDir(dir);
+			dataDir = dir;
 
-		dir = new File(baseDir, "config");
-		checkDir(dir);
-		configDir = dir;
+			dir = new File(baseDir, "config");
+			checkDir(dir);
+			configDir = dir;
 
-		File log4jConfig = new File(configDir, "log4j.xml");
-		if ((log4jConfig.exists()) && (log4jConfig.isFile())
-				&& (log4jConfig.canRead())) {
-			DOMConfigurator.configureAndWatch(log4jConfig.getPath(), 60 * 1000);
-		} else {
-			BasicConfigurator.configure();
-			LOGGER
-					.info("Log4j config file '"
-							+ log4jConfig.getPath()
-							+ "' doesn't exist (or isn't a file or hasn't read permission). Using basic log4j configuration.");
+			File log4jConfig = new File(configDir, "log4j.xml");
+			if ((log4jConfig.exists()) && (log4jConfig.isFile())
+					&& (log4jConfig.canRead())) {
+				DOMConfigurator.configureAndWatch(log4jConfig.getPath(),
+						60 * 1000);
+			} else {
+				BasicConfigurator.configure();
+				LOGGER
+						.info("Log4j config file '"
+								+ log4jConfig.getPath()
+								+ "' doesn't exist (or isn't a file or hasn't read permission). Using basic log4j configuration.");
+			}
+		} catch (Exception e) {
+			// TODO: do some logging
+			try {
+				retrieveAndReloadData();
+			} catch (Exception ex) {
+				// TODO: do some logging
+			}
 		}
 	}
 
@@ -90,45 +103,44 @@ public class Server {
 				.format(new Date())));
 	}
 
+	public void retrieveAndReloadData() {
+		DataRetriever dataRetriever = new DataRetriever(
+		// PROXY_HOSTNAME,
+		// PROXY_PORT
+		);
+		InputStream is = dataRetriever.retrieveInputStream(URL, new File(
+				dataDir, DATA_FILE_FORMAT.format(new Date())));
+		if (is != null) {
+			reloadData(is);
+		}
+	}
+
 	public void reloadData() {
 		Collection<File> allDataFiles = listAllDataFiles();
 
-		Table table = null;
-		while ((table == null) && (!allDataFiles.isEmpty())) {
+		boolean success = false;
+		while ((!success) && (!allDataFiles.isEmpty())) {
 			File latestDataFile = Collections.max(allDataFiles);
 			LOGGER.info("Detected '" + latestDataFile.getPath()
 					+ "' as latest data file. Reloading data.");
-			table = Table.read(latestDataFile.getPath(), SHEET_NAME);
-			if (table == null) {
-				allDataFiles.remove(latestDataFile);
-				File dir = new File(dataDir, "corrupted");
-				checkDir(dir);
-				corruptedDataDir = dir;
+			try {
+				success = reloadData(new FileInputStream(latestDataFile));
+				if (success) {
+					currentDataFile = latestDataFile;
+				} else {
+					allDataFiles.remove(latestDataFile);
+					File dir = new File(dataDir, "corrupted");
+					checkDir(dir);
+					corruptedDataDir = dir;
 
-				File newFile = new File(corruptedDataDir, "corrupt-"
-						+ latestDataFile.getName());
-				LOGGER.warn("Found corrupted data file '" + latestDataFile
-						+ "'. Moving to '" + newFile.getPath() + ".");
-				latestDataFile.renameTo(newFile);
-			} else {
-				rangliste = new Rangliste();
-				currentDataFile = latestDataFile;
-				for (int i = table.getMinRowIndex(); i < table.getMaxRowIndex(); i++) {
-					Row row = table.getRow(i);
-					int platz = (int) Double.parseDouble(row.getColumnValue(1)
-							.toString());
-					try {
-						Player spieler = new Player(row.getColumnValue(2)
-								.toString(), row.getColumnValue(3).toString(),
-								row.getColumnValue(4).toString(), row
-										.getColumnValue(5).toString(), row
-										.getColumnValue(6).toString(), row
-										.getColumnValue(7).toString());
-						rangliste.addSpieler(platz, spieler);
-					} catch (Exception e) {
-						e.printStackTrace();
-					}
+					File newFile = new File(corruptedDataDir, "corrupt-"
+							+ latestDataFile.getName());
+					LOGGER.warn("Found corrupted data file '" + latestDataFile
+							+ "'. Moving to '" + newFile.getPath() + ".");
+					latestDataFile.renameTo(newFile);
 				}
+			} catch (FileNotFoundException e) {
+				// TODO: do some logging
 			}
 		}
 	}
@@ -139,6 +151,32 @@ public class Server {
 
 	public Collection<File> listAllInvalidFiles() {
 		return listAllFiles(false);
+	}
+
+	private boolean reloadData(InputStream is) {
+		Table table = Table.read(is, SHEET_NAME);
+		if (table == null) {
+			return false;
+		} else {
+			rangliste = new Rangliste();
+			for (int i = table.getMinRowIndex(); i < table.getMaxRowIndex(); i++) {
+				Row row = table.getRow(i);
+				int platz = (int) Double.parseDouble(row.getColumnValue(1)
+						.toString());
+				try {
+					Player spieler = new Player(row.getColumnValue(2)
+							.toString(), row.getColumnValue(3).toString(), row
+							.getColumnValue(4).toString(), row
+							.getColumnValue(5).toString(), row
+							.getColumnValue(6).toString(), row
+							.getColumnValue(7).toString());
+					rangliste.addSpieler(platz, spieler);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+			return true;
+		}
 	}
 
 	private Collection<File> listAllFiles(final boolean valid) {

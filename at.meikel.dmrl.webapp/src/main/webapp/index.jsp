@@ -2,7 +2,7 @@
 <body>
 <h1>DMRL Startseite</h1>
 <p><%=new java.util.Date()%></p>
-<p><%=request.getScheme() %>://<%=request.getServerName() %>:<%=request.getServerPort() %>/</p>
+<p><%=request.getScheme()%>://<%=request.getServerName()%>:<%=request.getServerPort()%>/</p>
 <h2>DMRL Clients</h2>
 <p><a href="/client.jsp">jQuery-basierter Client</a></p>
 
@@ -13,6 +13,7 @@
 <h3>Admin</h3>
 <p><a href="/rest/admin/retrieveData">rest/admin/retrieveData</a></p>
 <p><a href="/rest/admin/reloadData">rest/admin/reloadData</a></p>
+<p><a href="/rest/admin/retrieveAndReloadData">rest/admin/retrieveAndReloadData</a></p>
 <p><a href="/rest/admin/getCurrentDataFileName">rest/admin/getCurrentDataFileName</a></p>
 <p><a href="/rest/admin/listAllDataFileNames">rest/admin/listAllDataFileNames</a></p>
 <h3>Players</h3>

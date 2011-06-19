@@ -38,24 +38,33 @@ public class DataRetriever {
 	}
 
 	public void retrieveFile(String url, File file) {
+		InputStream is = retrieveInputStream(url, file);
+		if (is != null) {
+			try {
+				saveFile2(is, file);
+			} catch (IllegalStateException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+
+	public InputStream retrieveInputStream(String url, File file) {
+		InputStream result = null;
+
 		HttpGet httpget = new HttpGet(url);
 		try {
 			HttpResponse response = httpclient.execute(httpget);
 			HttpEntity entity = response.getEntity();
-			if (entity == null) {
-				return;
-			}
-
-			try {
-				saveFile2(entity.getContent(), file);
-			} catch (IllegalStateException e) {
-				e.printStackTrace();
+			if (entity != null) {
+				result = entity.getContent();
 			}
 		} catch (ClientProtocolException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+
+		return result;
 	}
 
 	private void saveFile(InputStream instream, File outputfile) {
