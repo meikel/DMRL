@@ -27,6 +27,7 @@ public class Server {
 	private File dataDir;
 	private File corruptedDataDir;
 	private File configDir;
+	private File currentDataFile;
 	private Rangliste rangliste;
 
 	private static final Logger LOGGER = Logger.getLogger(Server.class);
@@ -42,6 +43,10 @@ public class Server {
 
 	public Server() {
 		rangliste = new Rangliste();
+	}
+
+	public File getCurrentDataFile() {
+		return currentDataFile;
 	}
 
 	public Rangliste getRankingList() {
@@ -107,6 +112,7 @@ public class Server {
 				latestDataFile.renameTo(newFile);
 			} else {
 				rangliste = new Rangliste();
+				currentDataFile = latestDataFile;
 				for (int i = table.getMinRowIndex(); i < table.getMaxRowIndex(); i++) {
 					Row row = table.getRow(i);
 					int platz = (int) Double.parseDouble(row.getColumnValue(1)

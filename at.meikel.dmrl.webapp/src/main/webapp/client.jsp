@@ -7,8 +7,11 @@
 		$(document).ready(function() {
 			// alert('doc.ready begin');
 			// var url = 'http://dmrl.meikel.cloudbees.net/rest/players';
-			var url ='http://localhost:8080/rest/players';
+			// var url ='http://localhost:8080/rest/players';
 			// var url ='http://dmrl.meikel.cloudbees.net/rest/players';
+			var url = "<%=request.getScheme() %>://<%=request.getServerName() %>:<%=request.getServerPort() %>/rest/players";
+			$('#url').empty().append('<span id="url">' + url + '</span>');
+
 			var html = '<table border="1" >\n';
 			html = html + '<thead>\n';
 			html = html + '<tr>';
@@ -58,9 +61,10 @@
 </head>
 <body>
 <h1>Dies ist ein auf jQuery-basierender DMRL Client.</h1>
-<p><a href="/index.jsp">Zur&uuml;ck</a>&nbsp;<a href="/client.html">Aktualisieren</a></p>
+<p><a href="/index.jsp">Zur&uuml;ck</a>&nbsp;<a href="/client.jsp">Aktualisieren</a></p>
 
 <h1>Tabelle</h1>
+<p>URL: <span id="url"></span></p>
 <div id="tabelle"></div>
 
 <h1>Dump</h1>

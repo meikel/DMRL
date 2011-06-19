@@ -17,6 +17,10 @@ public class Rangliste {
 		return map.size();
 	}
 
+	public List<Player> getAllPlayers() {
+		return new Vector<Player>(map.values());
+	}
+
 	public List<Player> find(String verein) {
 		Vector<Player> result = new Vector<Player>();
 		Vector<Integer> keys = new Vector<Integer>(map.keySet());
@@ -28,5 +32,14 @@ public class Rangliste {
 			}
 		}
 		return result;
+	}
+
+	public Player findByLicenseId(String licenseId) {
+		for (Player player : map.values()) {
+			if (player.getPassnummer().equals(licenseId)) {
+				return player;
+			}
+		}
+		return null;
 	}
 }

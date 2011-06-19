@@ -10,6 +10,10 @@
 	<!-- Enable annotation scanning. -->
 	<context:component-scan base-package="at.meikel.dmrl.webapp.rest" />
 
+	<bean id="server" class="at.meikel.mgr.server.Server">
+		<property name="baseDir" value="../at.meikel.dmrl.server/sample-server" />
+	</bean>
+
 	<bean id="jsonConverter"
 		class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">
 		<property name="supportedMediaTypes" value="application/json" />
