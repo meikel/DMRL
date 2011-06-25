@@ -1,32 +1,35 @@
 package at.meikel.mgr.server;
 
 import java.io.File;
-import java.util.Collection;
 import java.util.List;
 
 import org.apache.log4j.Logger;
+import org.apache.log4j.xml.DOMConfigurator;
 
 import at.meikel.mgr.model.Player;
 import at.meikel.mgr.model.Rangliste;
+import at.meikel.mgr.persistence.ExcelSheet;
 
 public class ServerMain {
 
 	private final static Logger LOGGER = Logger.getLogger(ServerMain.class);
 
 	public static void main(String[] args) {
-		Server server = new Server();
-		server.setBaseDir("./sample-server");
-		LOGGER.info("List all available data files");
-		Collection<File> allDataFiles = server.listAllDataFiles();
-		if (allDataFiles.isEmpty()) {
-			LOGGER.warn("No data file available.");
-		} else {
-			for (File file : allDataFiles) {
-				LOGGER.info(file.getAbsolutePath());
-			}
-		}
+		DOMConfigurator.configure(new File("./sample-server/config",
+				"log4j.xml").getAbsolutePath());
+		Server server = new Server("pu.hsqldb.mem");
 		LOGGER.info("Retrieve data");
 		server.retrieveData();
+		LOGGER.info("List all excel sheets available");
+		List<ExcelSheet> allData = server.listAllData();
+		if ((allData == null) || (allData.isEmpty())) {
+			LOGGER.warn("No data available.");
+		} else {
+			for (ExcelSheet sheet : allData) {
+				LOGGER.info(sheet.getId() + ", " + sheet.getUrl() + ", "
+						+ sheet.getTimestamp());
+			}
+		}
 		LOGGER.info("Load data");
 		server.reloadData();
 		LOGGER.info("Retrieve ranking list");
@@ -37,6 +40,14 @@ public class ServerMain {
 		List<Player> sgw = rankingList.find(team);
 		for (Player s : sgw) {
 			LOGGER.info(s);
+		}
+		for (int i = 1; i <= 40; i++) {
+			LOGGER.info("Waiting loop #" + i);
+			try {
+				Thread.sleep(15000);
+			} catch (InterruptedException e) {
+				break;
+			}
 		}
 	}
 

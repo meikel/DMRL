@@ -10,7 +10,11 @@
 	<artifactId>at.meikel.dmrl.server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>DMRL (Server)</name>
-	<description>The Server module contains the business logic of the software: periodically retrieving the official ranking list, transforming it into an internal representation, organizing the data and exporting it. When run in a J2EE web server this module is hosted by the webapp.</description>
+	<description>The Server module contains the business logic of the
+		software: periodically retrieving the official ranking list,
+		transforming it into an internal representation, organizing the data
+		and exporting it. When run in a J2EE web server this module is hosted
+		by the webapp.</description>
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.poi</groupId>
@@ -32,5 +36,62 @@
 			<artifactId>log4j</artifactId>
 			<version>1.2.14</version>
 		</dependency>
+		<!--  -->
+		<dependency>
+			<groupId>org.hsqldb</groupId>
+			<artifactId>hsqldb</artifactId>
+			<version>2.2.4</version>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.16</version>
+		</dependency>
+		<!--  Markus -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>3.5.1-Final</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate.java-persistence</groupId>
+			<artifactId>jpa-api</artifactId>
+			<version>2.0-cr-1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>3.5.1-Final</version>
+		</dependency>
+		<!--
+			<dependency> <groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId> <version>1.5.11</version>
+			</dependency>
+		-->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.5.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.persistence</groupId>
+			<artifactId>eclipselink</artifactId>
+			<version>2.0.2</version>
+		</dependency>
+		<!-- Meikel -->
+		<!--
+			<dependency> <groupId>javax.persistence</groupId>
+			<artifactId>persistence-api</artifactId> <version>1.0</version>
+			</dependency> <dependency> <groupId>org.hibernate</groupId>
+			<artifactId>hibernate</artifactId> <version>3.5.4-Final</version>
+			<type>pom</type> </dependency> <dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>3.5.4-Final</version> </dependency> <dependency>
+			<groupId>org.slf4j</groupId> <artifactId>slf4j-api</artifactId>
+			<version>1.5.2</version> <type>pom</type> </dependency> <dependency>
+			<groupId>org.slf4j</groupId> <artifactId>slf4j-log4j12</artifactId>
+			<version>1.5.2</version> <type>pom</type> </dependency>
+		-->
 	</dependencies>
 </project>

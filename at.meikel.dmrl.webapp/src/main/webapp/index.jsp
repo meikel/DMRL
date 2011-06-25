@@ -13,9 +13,8 @@
 <h3>Admin</h3>
 <p><a href="/rest/admin/retrieveData">rest/admin/retrieveData</a></p>
 <p><a href="/rest/admin/reloadData">rest/admin/reloadData</a></p>
-<p><a href="/rest/admin/retrieveAndReloadData">rest/admin/retrieveAndReloadData</a></p>
-<p><a href="/rest/admin/getCurrentDataFileName">rest/admin/getCurrentDataFileName</a></p>
-<p><a href="/rest/admin/listAllDataFileNames">rest/admin/listAllDataFileNames</a></p>
+<p><a href="/rest/admin/getCurrentData">rest/admin/getCurrentData</a></p>
+<p><a href="/rest/admin/listAllData">rest/admin/listAllData</a></p>
 <h3>Players</h3>
 <p><a href="/rest/players">rest/players</a></p>
 <p><a href="/rest/players.jsonp">rest/players.jsonp</a></p>

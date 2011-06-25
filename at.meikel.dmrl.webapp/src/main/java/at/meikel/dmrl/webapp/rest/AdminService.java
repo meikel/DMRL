@@ -1,7 +1,5 @@
 package at.meikel.dmrl.webapp.rest;
 
-import java.io.File;
-import java.util.Collection;
 import java.util.List;
 import java.util.Vector;
 
@@ -11,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import at.meikel.mgr.persistence.ExcelSheet;
 import at.meikel.mgr.server.Server;
 
 @Controller
@@ -21,40 +20,34 @@ public class AdminService {
 	@Autowired
 	Server server = null;
 
-	@RequestMapping(value = ADMIN_PREFIX + "/getCurrentDataFileName", method = RequestMethod.GET)
+	@RequestMapping(value = ADMIN_PREFIX + "/getCurrentData", method = RequestMethod.GET)
 	@ResponseBody
 	public String getCurrentDataFileName() {
 		String result = null;
 
 		if (server != null) {
-			File currentDataFile = server.getCurrentDataFile();
-			if (currentDataFile != null) {
-				result = currentDataFile.getAbsolutePath();
+			ExcelSheet sheet = server.getCurrentData();
+			if (sheet != null) {
+				result = "Id='" + sheet.getId() + "', URL='" + sheet.getUrl()
+						+ "', State='" + sheet.getState() + "'";
 			}
 		}
 
 		return result;
 	}
 
-	@RequestMapping(value = ADMIN_PREFIX + "/listAllDataFileNames", method = RequestMethod.GET)
+	@RequestMapping(value = ADMIN_PREFIX + "/listAllData", method = RequestMethod.GET)
 	@ResponseBody
 	public List<String> listAllDataFileNames() {
 		Vector<String> result = new Vector<String>();
 		if (server != null) {
-			Collection<File> allDataFiles = server.listAllDataFiles();
-			for (File file : allDataFiles) {
-				result.add(file.getAbsolutePath());
+			List<ExcelSheet> allData = server.listAllData();
+			for (ExcelSheet sheet : allData) {
+				result.add("Id='" + sheet.getId() + "', URL='" + sheet.getUrl()
+						+ "', State='" + sheet.getState() + "'");
 			}
 		}
 		return result;
-	}
-
-	@RequestMapping(value = ADMIN_PREFIX + "/retrieveAndReloadData", method = RequestMethod.GET)
-	@ResponseBody
-	public void retrieveAndReloadData() {
-		if (server != null) {
-			server.retrieveAndReloadData();
-		}
 	}
 
 	@RequestMapping(value = ADMIN_PREFIX + "/retrieveData", method = RequestMethod.GET)

@@ -11,7 +11,7 @@
 	<context:component-scan base-package="at.meikel.dmrl.webapp.rest" />
 
 	<bean id="server" class="at.meikel.mgr.server.Server">
-		<property name="baseDir" value="../at.meikel.dmrl.server/sample-server" />
+		<constructor-arg index="0" value="pu.hsqldb.mem"></constructor-arg>
 	</bean>
 
 	<bean id="jsonConverter"

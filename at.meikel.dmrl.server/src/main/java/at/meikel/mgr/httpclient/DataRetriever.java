@@ -1,8 +1,5 @@
 package at.meikel.mgr.httpclient;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
@@ -37,18 +34,7 @@ public class DataRetriever {
 		}
 	}
 
-	public void retrieveFile(String url, File file) {
-		InputStream is = retrieveInputStream(url, file);
-		if (is != null) {
-			try {
-				saveFile2(is, file);
-			} catch (IllegalStateException e) {
-				e.printStackTrace();
-			}
-		}
-	}
-
-	public InputStream retrieveInputStream(String url, File file) {
+	public InputStream retrieveInputStream(String url) {
 		InputStream result = null;
 
 		HttpGet httpget = new HttpGet(url);
@@ -65,70 +51,6 @@ public class DataRetriever {
 		}
 
 		return result;
-	}
-
-	private void saveFile(InputStream instream, File outputfile) {
-		FileOutputStream fos = null;
-		try {
-			fos = new FileOutputStream(outputfile);
-			int totalNumberOfBytesRead;
-			byte[] tmp = new byte[2048];
-			do {
-				totalNumberOfBytesRead = instream.read(tmp);
-				if (totalNumberOfBytesRead != -1) {
-					fos.write(tmp);
-				}
-			} while (totalNumberOfBytesRead != -1);
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		} finally {
-			try {
-				instream.close();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-			if (fos != null) {
-				try {
-					fos.close();
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
-			}
-		}
-	}
-
-	private void saveFile2(InputStream instream, File outputfile) {
-		FileOutputStream fos = null;
-		try {
-			fos = new FileOutputStream(outputfile);
-			int totalNumberOfBytesRead;
-			int value;
-			do {
-				value = instream.read();
-				if (value != -1) {
-					fos.write(value);
-				}
-			} while (value != -1);
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		} finally {
-			try {
-				instream.close();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-			if (fos != null) {
-				try {
-					fos.close();
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
-			}
-		}
 	}
 
 }

@@ -16,3 +16,13 @@ navigate browser to http://dmrl.meikel.cloudbees.net/index.jsp
 ---
 
 mvn --settings ./jenkins-settings.xml -Denv.site.username=mimimi -Denv.site.password=tralala site:deploy
+
+---
+
+show databases ;
+select user from mysql.user ;
+create user dmrl identified by ‘geheim‘ ;
+grant all on dmrl.* to 'dmrl' ;
+create database dmrl ;
+use sample ;
+show tables ;
