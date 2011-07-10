@@ -17,6 +17,18 @@
 	<properties>
 		<jackson.version>1.8.1</jackson.version>
 	</properties>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>bees-plugins-snapshots</id>
+			<url>http://repository-cloudbees.forge.cloudbees.com/public-snapshot/  </url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
 	<scm>
 		<connection>scm:git://github.com/meikel/DMRL.git</connection>
 		<developerConnection>scm:git://github.com/meikel/DMRL.git</developerConnection>
@@ -38,6 +50,10 @@
 				<execution> <phase>validate</phase> <goals> <goal>create</goal>
 				</goals> </execution> </executions> </plugin>
 			-->
+			<plugin>
+				<groupId>com.cloudbees</groupId>
+				<artifactId>bees-maven-plugin</artifactId>
+			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
@@ -99,6 +115,12 @@
 			<!-- <scope>provided</scope> -->
 		</dependency>
 		<!-- end - jstl dependency-->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.5</version>
+			<scope>provided</scope>
+		</dependency>
 		<!--
 			<dependency> <groupId>log4j</groupId> <artifactId>log4j</artifactId>
 			<version>1.2.14</version> </dependency>
@@ -130,12 +152,15 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>3.0.5.RELEASE</version>
 		</dependency>
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>servlet-api</artifactId>
-			<version>2.5</version>
-			<scope>provided</scope>
-		</dependency>
+		<!-- XML -->
+		<!--
+			<dependency> <groupId>org.springframework</groupId>
+			<artifactId>spring-oxm</artifactId> <version>3.0.5.RELEASE</version>
+			</dependency> <dependency>
+			<groupId>com.thoughtworks.xstream</groupId>
+			<artifactId>xstream</artifactId> <version>1.2.2</version>
+			</dependency>
+		-->
 		<!-- Jackson -->
 		<dependency>
 			<groupId>org.codehaus.jackson</groupId>

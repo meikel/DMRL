@@ -8,10 +8,11 @@ import javax.servlet.Filter;
 import javax.servlet.FilterChain;
 import javax.servlet.FilterConfig;
 import javax.servlet.ServletException;
+import javax.servlet.ServletOutputStream;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
-import javax.servlet.ServletResponseWrapper;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpServletResponseWrapper;
 
 /**
  * Servlet Filter implementation class SampleFilter
@@ -35,15 +36,24 @@ public class SampleFilter implements Filter {
 	 */
 	public void doFilter(ServletRequest request, ServletResponse response,
 			FilterChain chain) throws IOException, ServletException {
-		PrintWriter out = response.getWriter();
-		CharResponseWrapper wrapper = new CharResponseWrapper(response);
+		System.out.println(request.getContentType());
+		// PrintWriter out = response.getWriter();
+		ServletOutputStream out = response.getOutputStream();
+		CharResponseWrapper wrapper = new CharResponseWrapper(
+				(HttpServletResponse) response);
+		System.out.println("callback=" + request.getParameter("callback"));
 		chain.doFilter(request, wrapper);
-		CharArrayWriter caw = new CharArrayWriter();
-		caw.write("jsonp(");
-		caw.write(wrapper.toString());
-		caw.write(")");
-		response.setContentLength(caw.toString().length());
-		out.write(caw.toString());
+		// CharArrayWriter caw = new CharArrayWriter();
+		String s = "jsonp(" + wrapper.toString() + ")";
+		if (s.length() < 100) {
+			System.out.println("s=" + s);
+		} else {
+			System.out.println("s.length()=" + s.length());
+		}
+		// caw.write(s);
+		response.setContentLength(s.length());
+		// out.write(caw.toString());
+		out.print(s);
 		out.close();
 	}
 
@@ -55,21 +65,52 @@ public class SampleFilter implements Filter {
 
 }
 
-class CharResponseWrapper extends ServletResponseWrapper {
+class CharResponseWrapper extends HttpServletResponseWrapper {
 	private CharArrayWriter output;
-	private PrintWriter writer;
+	private StringBuilder builder;
 
+	@Override
 	public String toString() {
-		return output.toString();
+		// if (output != null) {
+		// System.out.println("output = " + output.toString());
+		// }
+		// if (builder != null) {
+		// System.out.println("builder = " + builder.toString());
+		// }
+
+		if (output != null) {
+			return output.toString();
+		} else if (builder != null) {
+			return builder.toString();
+		} else {
+			return "";
+		}
 	}
 
-	public CharResponseWrapper(ServletResponse response) {
+	public CharResponseWrapper(HttpServletResponse response) {
 		super(response);
-		output = new CharArrayWriter();
-		writer = new PrintWriter(output);
 	}
 
+	@Override
 	public PrintWriter getWriter() {
-		return writer;
+		output = new CharArrayWriter();
+		return new PrintWriter(output);
 	}
+
+	@Override
+	public ServletOutputStream getOutputStream() {
+		// builder = new StringBuilder();
+		output = new CharArrayWriter();
+		final PrintWriter pw = new PrintWriter(output);
+		ServletOutputStream stream = new ServletOutputStream() {
+			@Override
+			public void write(int b) throws IOException {
+				// builder.append((char) b);
+				// output.append((char) b);
+				pw.write(b);
+			}
+		};
+		return stream;
+	}
+
 }

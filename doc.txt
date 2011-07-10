@@ -3,6 +3,7 @@ mvn package
 
 cd /d <base>\at.meikel.dmrl.reactor\at.meikel.dmrl.webapp
 mvn  [ -Djetty.port=4711 ]  jetty:run
+mvn  [ -Dbees.port=4711 ]   bees:run
 
 navigate browser to http://localhost:8080/index.jsp
 
@@ -10,6 +11,8 @@ mvn jetty:stop
 
 bees app:deploy -a meikel/dmrl target\at.meikel.dmrl.webapp.war
 bees app:restart -f -a meikel/dmrl
+(see https://cloudbees.zendesk.com/entries/421064-maven-guide)
+mvn bees:deploy -Dbees.appid=myapp
 
 navigate browser to http://dmrl.meikel.cloudbees.net/index.jsp
 

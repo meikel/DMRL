@@ -14,7 +14,8 @@
 		<module>at.meikel.dmrl.taglib</module>
 		<module>at.meikel.dmrl.webapp</module>
 	</modules>
-	<description>The parent module containing all modules to allow a reactor build.</description>
+	<description>The parent module containing all modules to allow a
+		reactor build.</description>
 	<ciManagement>
 		<system>Jenkins</system>
 		<url>http://www.cloudbees.com</url>
@@ -103,6 +104,20 @@
 								<configuration>
 								<taglib.src.dir>src/main/webapp/WEB-INF</taglib.src.dir>
 								</configuration>
+							-->
+						</plugin>
+						<plugin>
+							<!-- http://khmarbaise.github.com/Maven-License-Verifier-Plugin/ -->
+							<groupId>com.soebes.maven.plugins.mlv</groupId>
+							<artifactId>maven-license-verifier-plugin</artifactId>
+							<version>0.4</version>
+							<configuration>
+								<licenseFile>${project.parent.basedir}/config/licenses.xml
+								</licenseFile>
+							</configuration>
+							<!--
+								<executions> <execution> <goals> <goal>verify</goal> </goals>
+								</execution> </executions>
 							-->
 						</plugin>
 					</reportPlugins>

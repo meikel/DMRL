@@ -20,6 +20,19 @@
 	</bean>
 
 	<!--
+		Define the OXM marshaller which is used to convert the Objects <->
+		XML.
+	-->
+	<!--
+		<bean id="oxmMarshaller"
+		class="org.springframework.oxm.xstream.XStreamMarshaller" /> <bean
+		id="marshallingHttpMessageConverter"
+		class="org.springframework.http.converter.xml.MarshallingHttpMessageConverter">
+		<property name="marshaller" ref="oxmMarshaller" /> <property
+		name="unmarshaller" ref="oxmMarshaller" /> </bean>
+	-->
+
+	<!--
 		Required for REST services in order to bind the return value to the
 		ResponseBody.
 	-->
@@ -27,6 +40,7 @@
 		class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
 		<property name="messageConverters">
 			<util:list id="beanList">
+				<!--<ref bean="marshallingHttpMessageConverter" /> -->
 				<ref bean="jsonConverter" />
 			</util:list>
 		</property>

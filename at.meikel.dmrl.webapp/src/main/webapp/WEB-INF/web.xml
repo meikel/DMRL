@@ -8,12 +8,25 @@
 		<param-name>contextConfigLocation</param-name>
 		<param-value>/META-INF/spring/*.xml</param-value>
 	</context-param>
+	<filter>
+		<filter-name>SampleFilter</filter-name>
+		<display-name>SampleFilter</display-name>
+		<description></description>
+		<filter-class>at.meikel.dmrl.webapp.rest.SampleFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>SampleFilter</filter-name>
+		<url-pattern>/sample.jsonp</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>SampleFilter</filter-name>
+		<url-pattern>/rest/playersp.off</url-pattern>
+	</filter-mapping>
 	<!--
 		<filter> <filter-name>SampleFilter</filter-name>
-		<display-name>SampleFilter</display-name> <description></description>
-		<filter-class>at.meikel.dmrl.webapp.rest.SampleFilter</filter-class>
+		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
 		</filter> <filter-mapping> <filter-name>SampleFilter</filter-name>
-		<url-pattern>/rest/*</url-pattern> </filter-mapping>
+		<url-pattern>/rest/players/*</url-pattern> </filter-mapping>
 	-->
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>

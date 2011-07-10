@@ -8,6 +8,10 @@
 
 <h2>Verschiedenes</h2>
 <p><a href="/props.jsp">Verwendung der Taglib</a></p>
+<p><a href="/sample.jsp">/sample.jsp</a></p>
+<p><a href="/sample.xml">/sample.xml</a></p>
+<p><a href="/sample.json">/sample.json</a></p>
+<p><a href="/sample.jsonp">/sample.jsonp</a></p>
 
 <h2>API</h2>
 <h3>Admin</h3>
