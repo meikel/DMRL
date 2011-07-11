@@ -99,7 +99,7 @@
 		};
 		
 		$(document).ready(function() {
-			alert('doc.ready');
+			// alert('doc.ready');
 
 			$('#url1').empty().append('<span id="url1">' + url1 + '</span>');
 			$('#url2').empty().append('<span id="url2">' + url2 + '</span>');
@@ -141,6 +141,17 @@
 			$("#exec8").click(function() {
 				ajaxjsonp(url8);
 			});
+
+			// http://www.tutorialized.com/view/tutorial/Combine-JSONP-and-jQuery-to-quickly-build-powerful-mashups/42951
+			url9 = "<%=request.getScheme() %>://<%=request.getServerName() %>:<%=request.getServerPort() %>/rest/players?callback=?";
+			alert('url9 = ' + url9);
+			$.getJSON(url9, 
+				function(data) {
+				    // alert("Symbol: " + data.symbol + ", Price: " + data.price);
+				    alert('My callback');
+				    $("#dump").append($.dump(data));
+				}
+			);
 		});
 	</script>
 </head>

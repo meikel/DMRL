@@ -21,7 +21,7 @@ public class PlayerService {
 	@Autowired
 	Server server = null;
 
-	@RequestMapping(value = { "/players", "/players.jsonp" }, method = RequestMethod.GET)
+	@RequestMapping(value = { "/players" }, method = RequestMethod.GET)
 	@ResponseBody
 	public List<Player> getAllPlayers() {
 		List<Player> result = null;
