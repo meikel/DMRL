@@ -34,7 +34,7 @@ public class Server {
 	private Rangliste rangliste;
 
 	private static final Logger LOGGER = Logger.getLogger(Server.class);
-	private static final String URL = "http://www.minigolfsport.de/download/rangliste23.xls";
+	private static final String URL = "http://www.minigolfsport.de/download/rangliste22.xls";
 	private static final String SHEET_NAME = "DRL";
 
 	// private static final String PROXY_HOSTNAME = "iproxy";
@@ -142,13 +142,13 @@ public class Server {
 						int platz = (int) Double.parseDouble(row
 								.getColumnValue(1).toString());
 						try {
-							Player spieler = new Player(row.getColumnValue(2)
-									.toString(), row.getColumnValue(3)
-									.toString(), row.getColumnValue(4)
-									.toString(), row.getColumnValue(5)
-									.toString(), row.getColumnValue(6)
-									.toString(), row.getColumnValue(7)
-									.toString());
+							Player spieler = new Player(platz, row
+									.getColumnValue(2).toString(), row
+									.getColumnValue(3).toString(), row
+									.getColumnValue(4).toString(), row
+									.getColumnValue(5).toString(), row
+									.getColumnValue(6).toString(), row
+									.getColumnValue(7).toString());
 							rangliste.addSpieler(platz, spieler);
 						} catch (Exception e) {
 							e.printStackTrace();

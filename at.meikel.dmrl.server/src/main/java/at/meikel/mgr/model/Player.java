@@ -5,6 +5,7 @@ import java.io.Serializable;
 public class Player implements Serializable {
 
 	private static final long serialVersionUID = 1L;
+	private int position;
 	private String passnummer;
 	private String vorname;
 	private String nachname;
@@ -13,8 +14,10 @@ public class Player implements Serializable {
 	private String landesverband;
 	private double ranglistenwert;
 
-	public Player(String passnummer, String name, String kategorie,
-			String verein, String landesverband, String ranglistenwert) {
+	public Player(int position, String passnummer, String name,
+			String kategorie, String verein, String landesverband,
+			String ranglistenwert) {
+		this.position = position;
 		this.passnummer = passnummer;
 		if (name.contains(",")) {
 			this.vorname = name.substring(name.indexOf(", ") + 2);
@@ -27,6 +30,10 @@ public class Player implements Serializable {
 		this.verein = verein;
 		this.landesverband = landesverband;
 		this.ranglistenwert = Double.parseDouble(ranglistenwert);
+	}
+
+	public int getPosition() {
+		return position;
 	}
 
 	public String getPassnummer() {
@@ -59,8 +66,9 @@ public class Player implements Serializable {
 
 	@Override
 	public String toString() {
-		return "[Spieler (" + getPassnummer() + ";" + getVorname() + ";"
-				+ getNachname() + ";" + getKategorie() + ";" + getVerein()
-				+ ";" + getLandesverband() + ";" + getRanglistenwert() + ")]";
+		return "[Spieler (" + getPosition() + ";" + getPassnummer() + ";"
+				+ getVorname() + ";" + getNachname() + ";" + getKategorie()
+				+ ";" + getVerein() + ";" + getLandesverband() + ";"
+				+ getRanglistenwert() + ")]";
 	}
 }

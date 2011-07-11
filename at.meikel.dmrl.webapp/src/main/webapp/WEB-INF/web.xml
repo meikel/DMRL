@@ -14,20 +14,23 @@
 		<description></description>
 		<filter-class>at.meikel.dmrl.webapp.rest.SampleFilter</filter-class>
 	</filter>
-	<filter-mapping>
-		<filter-name>SampleFilter</filter-name>
-		<url-pattern>/sample.jsonp</url-pattern>
-	</filter-mapping>
-	<filter-mapping>
-		<filter-name>SampleFilter</filter-name>
-		<url-pattern>/rest/playersp.off</url-pattern>
-	</filter-mapping>
 	<!--
-		<filter> <filter-name>SampleFilter</filter-name>
-		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
-		</filter> <filter-mapping> <filter-name>SampleFilter</filter-name>
-		<url-pattern>/rest/players/*</url-pattern> </filter-mapping>
+		http://stackoverflow.com/questions/26732/invalid-url-pattern-servlet-mapping-in-tomcat-6-0
+
+		The url-pattern specification: A string beginning with a ‘/’ character
+		and ending with a ‘/*’ suffix is used for path mapping. A string
+		beginning with a ‘*.’ prefix is used as an extension mapping. A string
+		containing only the ’/’ character indicates the "default" servlet of
+		the application. In this case the servlet path is the request URI
+		minus the context path and the path info is null. All other strings
+		are used for exact matches only.
+
+		http://www.oracle.com/technetwork/java/javaee/servlet/index.html
 	-->
+	<filter-mapping>
+		<filter-name>SampleFilter</filter-name>
+		<url-pattern>/rest/*</url-pattern>
+	</filter-mapping>
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
