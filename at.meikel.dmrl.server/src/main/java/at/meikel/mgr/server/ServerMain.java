@@ -6,6 +6,7 @@ import java.util.List;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 
+import at.meikel.mgr.httpclient.DataRetriever;
 import at.meikel.mgr.model.Player;
 import at.meikel.mgr.model.Rangliste;
 import at.meikel.mgr.persistence.ExcelSheet;
@@ -17,6 +18,11 @@ public class ServerMain {
 	public static void main(String[] args) {
 		DOMConfigurator.configure(new File("./sample-server/config",
 				"log4j.xml").getAbsolutePath());
+		
+    // DataRetriever dr = new DataRetriever();
+    // dr.doSomething();
+		// System.exit(0);
+		
 		Server server = new Server("pu.hsqldb.mem");
 		LOGGER.info("Retrieve data");
 		server.retrieveData();

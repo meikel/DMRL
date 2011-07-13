@@ -68,11 +68,11 @@ public class PlayerService {
 		Iterator<Player> iterator = result.iterator();
 		while (iterator.hasNext()) {
 			Player player = iterator.next();
-			if (! player.getVerein().equals(teamName)) {
+			if (!player.getVerein().equals(teamName)) {
 				iterator.remove();
 			}
 		}
-		
+
 		Collections.sort(result, new Comparator<Player>() {
 			@Override
 			public int compare(Player p1, Player p2) {
@@ -92,8 +92,7 @@ public class PlayerService {
 		return result;
 	}
 
-	@RequestMapping(value = { "/players/byLicenseId/{licenseId}",
-			"/players/byLicenseId/{licenseId}.jsonp" }, method = RequestMethod.GET)
+	@RequestMapping(value = { "/players/byLicenseId/{licenseId}" }, method = RequestMethod.GET)
 	@ResponseBody
 	public Player getPlayerByLicenseId(@PathVariable String licenseId) {
 		if (server != null) {

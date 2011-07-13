@@ -141,9 +141,16 @@ public class Server {
 						Row row = table.getRow(i);
 						int platz = (int) Double.parseDouble(row
 								.getColumnValue(1).toString());
+						String passnummer = row.getColumnValue(2).toString();
 						try {
-							Player spieler = new Player(platz, row
-									.getColumnValue(2).toString(), row
+							passnummer = Long.toString((long) Double
+									.parseDouble(passnummer));
+						} catch (Exception e) {
+							// ignore
+						}
+
+						try {
+							Player spieler = new Player(platz, passnummer, row
 									.getColumnValue(3).toString(), row
 									.getColumnValue(4).toString(), row
 									.getColumnValue(5).toString(), row

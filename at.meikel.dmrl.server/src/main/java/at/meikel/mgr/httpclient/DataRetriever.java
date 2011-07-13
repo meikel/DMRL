@@ -2,6 +2,7 @@ package at.meikel.mgr.httpclient;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.List;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpHost;
@@ -11,6 +12,10 @@ import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.conn.params.ConnRoutePNames;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
 public class DataRetriever {
 
@@ -51,6 +56,18 @@ public class DataRetriever {
 		}
 
 		return result;
+	}
+
+	public void doSomething() {
+		WebDriver driver = new HtmlUnitDriver();
+		driver.get("http://www.minigolfsport.de/download/");
+		List<WebElement> elements = driver.findElements(By
+				.xpath("//table[1]/tbody/tr"));
+		System.out.println("size=" + elements.size());
+		for (WebElement element : elements) {
+			// System.out.println(element);
+			System.out.println(element.findElement(By.xpath("child::td[2]/a")).getText());
+		}
 	}
 
 }
