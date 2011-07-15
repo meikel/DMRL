@@ -64,12 +64,36 @@
 					who just wants to display a part of the Deutsche Minigolf Rangliste
 					on your website?</p>
 
-				<p>The bad news is, that currently the project is not so far that
-					you can integrate it into your website. My plan is, that I'll
-					have
-					an initial prototype of the software up and running before
-					friday,
-					15th of july 2011.</p>
+				<p>That's great, because the software was developed for you! You
+					only need to add some JavaScript code to your homepage and will be
+					able to display the Deutsche Minigolf Rangliste there.</p>
+
+				<p>
+					The good news is:
+					since friday,
+					15th of july 2011, there is an
+					initial
+					prototype of the
+					software up and running on cloudbees.net.
+					Here you
+					can find a
+					<a href="./samples.html">sample client</a>
+					calling the service and displaying the results.
+				</p>
+
+				<p>
+					The bad news is: until now I did not create any user
+					documentation
+					which explains how to integrate the service in your
+					website. For the
+					moment you have to open the sample in your browser and display
+					the
+					source code. My samples are based on
+					<a href="http://jquery.com/">jQuery</a>
+					and should be easy to understand.
+				</p>
+
+				<p>If you need some help feel free to contact me.</p>
 			</answer>
 		</faq>
 
@@ -81,7 +105,7 @@
 					there is much other stuff, like creating a user documentation.</p>
 
 				<p>
-					If you want to participate just have a look to at
+					If you want to participate just have a look at
 					<a href="join-in.html">Join in</a>
 					.
 				</p>

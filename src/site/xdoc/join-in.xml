@@ -11,40 +11,48 @@
 		<section name="Join In">
 			<p>You're interested in participating? No problem, here are some
 				open
-				tasks to be finished.</p>
+				tasks to be finished. If you want to participate but don't know
+				exactly where to start, don't hesitate to contact me.</p>
 		</section>
 
 		<section name="Open tasks">
-			<p>
-				<ul>
-					<li>There is a problem with cross domain scripting which means
-						that
-						an AJAX call from your website to dmrl.de will not succeed.</li>
-					<li>I'd like to have a concept (including a protoype
-						implementation) for a DMRL client which does not need to have
-						Java-Scipt enabled on the browser.</li>
-					<li>A user documentation is needed.</li>
-					<li>Translation of the user documentation to (at least) german
-						language.</li>
-					<li>Clean up the maven pom files.</li>
-					<li>Clean up the project homepage.</li>
-					<li>Finish an initial version of the server module.</li>
-					<li>There is a problem with the deployment of the taglib to the
-						application server which needs to be solved.</li>
-					<li>Implement a basic mechanism for service versioning.</li>
-					<li>Design a logo for the project.</li>
-					<li>
-						Do some merchanidsing and create some advertised products
-						including
-						<ul>
-							<li>T-Shirt,</li>
-							<li>Coffee mug,</li>
-							<li>Minigolf case and</li>
-							<li>Minigolf ball.</li>
-						</ul>
-					</li>
-				</ul>
-			</p>
+			<ul>
+				<li>I'd like to have a concept (including a protoype
+					implementation)
+					for a DMRL client which does not need to have
+					Java-Scipt enabled on
+					the browser.</li>
+				<li>A user documentation is needed.</li>
+				<li>Just in case someone wants to join in the development or check
+					out and compile the source code, a developer documentation is also
+					needed.</li>
+				<li>Translation of the user documentation to (at least) german
+					language.</li>
+				<li>Clean up the maven pom files and maven project.</li>
+				<li>Clean up the project homepage.</li>
+				<li>Server should periodically check if a new ranking list is
+					available.</li>
+				<li>There is a problem with the deployment of the taglib to the
+					application server which needs to be solved.</li>
+				<li>Implement a basic mechanism for service versioning.</li>
+				<li>Solve the XML validation problem with samples.xml:head</li>
+				<li>License verification has to be done.</li>
+				<li>Implement some additional services i.e. get players by category.
+				</li>
+				<li>Do some search engine optimization and make the project homepage
+					available to Google.</li>
+				<li>Design a logo for the project.</li>
+				<li>
+					Do some merchanidsing and create some advertised products
+					including
+					<ul>
+						<li>T-Shirt,</li>
+						<li>Coffee mug,</li>
+						<li>Minigolf case and</li>
+						<li>Minigolf ball.</li>
+					</ul>
+				</li>
+			</ul>
 		</section>
 
 	</body>

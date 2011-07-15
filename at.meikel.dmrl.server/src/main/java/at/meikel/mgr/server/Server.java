@@ -34,7 +34,6 @@ public class Server {
 	private Rangliste rangliste;
 
 	private static final Logger LOGGER = Logger.getLogger(Server.class);
-	private static final String URL = "http://www.minigolfsport.de/download/rangliste22.xls";
 	private static final String SHEET_NAME = "DRL";
 
 	// private static final String PROXY_HOSTNAME = "iproxy";
@@ -44,7 +43,9 @@ public class Server {
 		rangliste = new Rangliste();
 		emf = Persistence.createEntityManagerFactory(persistenceUnit);
 		em = emf.createEntityManager();
+		LOGGER.info("Retrieve data");
 		retrieveData();
+		LOGGER.info("Load data");
 		reloadData();
 	}
 
@@ -61,36 +62,37 @@ public class Server {
 		// PROXY_HOSTNAME,
 		// PROXY_PORT
 		);
-		// dataRetriever.retrieveFile(URL, new File(dataDir, DATA_FILE_FORMAT
-		// .format(new Date())));
 
-		ExcelSheet sheet = new ExcelSheet();
-		sheet.setTimestamp(new Date());
-		sheet.setUrl(URL);
-		sheet.setState(STATE.OK);
+		if (dataRetriever.findCurrentFile()) {
+			ExcelSheet sheet = new ExcelSheet();
+			sheet.setTimestamp(dataRetriever.getCurrentFileDate());
+			sheet.setUrl(dataRetriever.getUrl()
+					+ dataRetriever.getCurrentFileName());
+			sheet.setState(STATE.OK);
 
-		InputStream is = dataRetriever.retrieveInputStream(URL);
-		ByteArrayOutputStream baos = new ByteArrayOutputStream();
-		try {
-			int b;
-			do {
-				b = is.read();
-				if (b >= 0) {
-					baos.write(b);
-				}
-			} while (b >= 0);
-			sheet.setData(baos.toByteArray());
-			LOGGER.info("Retrieved sheet Id='" + sheet.getId() + "', URL='"
-					+ sheet.getUrl() + "', Size='" + sheet.getData().length
-					+ "'.");
-		} catch (IOException e) {
-			sheet.setState(STATE.CORRUPTED);
-			LOGGER.error(e);
+			InputStream is = dataRetriever.retrieveInputStream();
+			ByteArrayOutputStream baos = new ByteArrayOutputStream();
+			try {
+				int b;
+				do {
+					b = is.read();
+					if (b >= 0) {
+						baos.write(b);
+					}
+				} while (b >= 0);
+				sheet.setData(baos.toByteArray());
+				LOGGER.info("Retrieved sheet Id='" + sheet.getId() + "', URL='"
+						+ sheet.getUrl() + "', Size='" + sheet.getData().length
+						+ "'.");
+			} catch (IOException e) {
+				sheet.setState(STATE.CORRUPTED);
+				LOGGER.error(e);
+			}
+
+			em.getTransaction().begin();
+			em.persist(sheet);
+			em.getTransaction().commit();
 		}
-
-		em.getTransaction().begin();
-		em.persist(sheet);
-		em.getTransaction().commit();
 	}
 
 	public void reloadData() {

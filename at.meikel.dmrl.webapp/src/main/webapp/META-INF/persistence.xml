@@ -35,7 +35,7 @@
 			<property name="hibernate.dialect" value="org.hibernate.dialect.HSQLDialect" />
 
 			<!-- Echo all executed SQL to stdout -->
-			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.show_sql" value="false" />
 
 			<!-- Drop and re-create the database schema on startup <property -->
 			<!-- validate, update, create, create-drop -->

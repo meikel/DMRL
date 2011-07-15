@@ -1,0 +1,31 @@
+The following technologies, frameworks and APIs are used in this project:
+
+- GIT, Github
+- Maven
+  - org.apache.maven.plugins:maven-war-plugin
+  - org.apache.maven.plugins:maven-site-plugin
+    - org.apache.maven.plugins:maven-project-info-reports-plugin
+    - org.apache.maven.plugins:maven-javadoc-plugin
+    - org.apache.maven.plugins:maven-jxr-plugin
+    - org.apache.maven.plugins:maven-checkstyle-plugin
+    - net.sourceforge.maven-taglib:maven-taglib-plugin
+    - com.soebes.maven.plugins.mlv:maven-license-verifier-plugin
+  - com.cloudbees:bees-maven-plugin
+  - org.mortbay.jetty:maven-jetty-plugin
+- Cloudbees.com
+- J2EE Web App
+  - JSP
+  - Servlet
+  - Taglib
+- Spring
+  ? REST Services
+- java.util.regexp
+- SLF4J, Log4J
+- Apache POI
+- Apache httpcomponents
+? Apache commons-io
+- Hibernate, JPA, Eclipselink
+  - HSQLDB
+    - Using CLOB
+  - MySQL
+- Selenium API + HtmlUnit Driver

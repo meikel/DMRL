@@ -9,11 +9,16 @@ import javax.servlet.ServletException;
 import javax.servlet.ServletOutputStream;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
+import javax.servlet.http.HttpServletRequest;
+
+import org.apache.log4j.Logger;
 
 /**
  * Servlet Filter implementation class SampleFilter
  */
 public class SampleFilter implements Filter {
+
+	private static final Logger LOGGER = Logger.getLogger(SampleFilter.class);
 
 	/**
 	 * Default constructor.
@@ -32,12 +37,25 @@ public class SampleFilter implements Filter {
 	 */
 	public void doFilter(ServletRequest request, ServletResponse response,
 			FilterChain chain) throws IOException, ServletException {
-		System.out
-				.println("--------------------------------------------------");
-		System.out.println("timestamp=" + new java.util.Date());
-		System.out.println("request-content-type=" + request.getContentType());
+		// String url = request.getScheme() + request.getServerName()
+		// + request.getServerPort();
+		String reqUrl = "unknown";
+		try {
+			reqUrl = ((HttpServletRequest) request).getRequestURL().toString();
+			String queryString = ((HttpServletRequest) request)
+					.getQueryString();
+			if (queryString != null) {
+				reqUrl += "?" + queryString;
+			}
+		} catch (Exception e) {
+			// ignore
+		}
+
+		LOGGER.info("Executing servlet for URL " + reqUrl + " at "
+				+ new java.util.Date());
+		LOGGER.info("    request-content-type=" + request.getContentType());
 		String callback = request.getParameter("callback");
-		System.out.println("callback=" + callback);
+		LOGGER.info("    callback=" + callback);
 		ServletOutputStream out = response.getOutputStream();
 		if (callback != null) {
 			out.write((callback + "(").getBytes());
@@ -46,10 +64,8 @@ public class SampleFilter implements Filter {
 		if (callback != null) {
 			out.write(")".getBytes());
 		}
-		System.out.println("response-content-type=" + response.getContentType());
+		LOGGER.info("    response-content-type=" + response.getContentType());
 		out.close();
-		System.out
-				.println("--------------------------------------------------");
 	}
 
 	/**

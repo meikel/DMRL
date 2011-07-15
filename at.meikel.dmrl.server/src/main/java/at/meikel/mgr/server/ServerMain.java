@@ -6,7 +6,6 @@ import java.util.List;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 
-import at.meikel.mgr.httpclient.DataRetriever;
 import at.meikel.mgr.model.Player;
 import at.meikel.mgr.model.Rangliste;
 import at.meikel.mgr.persistence.ExcelSheet;
@@ -16,16 +15,12 @@ public class ServerMain {
 	private final static Logger LOGGER = Logger.getLogger(ServerMain.class);
 
 	public static void main(String[] args) {
-		DOMConfigurator.configure(new File("./sample-server/config",
-				"log4j.xml").getAbsolutePath());
-		
-    // DataRetriever dr = new DataRetriever();
-    // dr.doSomething();
-		// System.exit(0);
-		
+		// File configFile = new File("./sample-server/config", "log4j.xml");
+		File configFile = new File(
+				"../at.meikel.dmrl.webapp/src/main/webapp/WEB-INF", "log4j.xml");
+		DOMConfigurator.configure(configFile.getAbsolutePath());
+
 		Server server = new Server("pu.hsqldb.mem");
-		LOGGER.info("Retrieve data");
-		server.retrieveData();
 		LOGGER.info("List all excel sheets available");
 		List<ExcelSheet> allData = server.listAllData();
 		if ((allData == null) || (allData.isEmpty())) {
@@ -36,8 +31,6 @@ public class ServerMain {
 						+ sheet.getTimestamp());
 			}
 		}
-		LOGGER.info("Load data");
-		server.reloadData();
 		LOGGER.info("Retrieve ranking list");
 		Rangliste rankingList = server.getRankingList();
 		LOGGER.info("Size = " + rankingList.size());
@@ -48,7 +41,9 @@ public class ServerMain {
 			LOGGER.info(s);
 		}
 		for (int i = 1; i <= 40; i++) {
-			LOGGER.info("Waiting loop #" + i);
+			if (LOGGER.isDebugEnabled()) {
+				LOGGER.debug("Waiting loop #" + i);
+			}
 			try {
 				Thread.sleep(15000);
 			} catch (InterruptedException e) {

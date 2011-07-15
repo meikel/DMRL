@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+
+	<properties>
+		<title>at.meikel.dmrl - Sample</title>
+		<author email="meikel@meikel.at">Meikel</author>
+	</properties>
+
+	<head>
+		<script type="text/javascript"
+			src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+		<script type="text/javascript"
+			src="http://plugins.jquery.com/files/jquery.dump.js.txt"></script>
+		<script type="text/javascript" src="./js/client.js"></script>
+	</head>
+
+	<body>
+		<section name="Samples">
+			<p>Here you see three samples for clients that use the provided
+				RESTful services. The first sample retrieves the data from the
+				ranking list for exactly one player which is specified by the
+				license id. The second sample retrieves the data for all players for
+				a
+				given team. The third sample retrieves the data of all players in
+				the ranking list.</p>
+
+			<p>Keep in mind that the samples will only work if you have
+				JavaScript enabled in your browser.</p>
+
+			<p id="warning">Warning: JavaScript seems to be not enabled in your browser.
+				The examples won't work.</p>
+
+			<subsection name="Retrieve the data for exactly one player">
+				<p>
+					To retrieve the data for exactly one player you have to call
+					service
+					<em>/players/byLicenseId/&lt;licenseId&gt;</em>
+				</p>
+				<p>
+					Click the button and see the section
+					<em>Ranking list</em>
+					below showing the retrieved data.
+				</p>
+				<p>
+					<input id="sample1" type="button" name="sample1" value="One player"></input>
+				</p>
+			</subsection>
+
+			<subsection name="Retrieve the data for all players of a given team">
+				<p>
+					To retrieve the data all players of a given team you have to call
+					service
+					<em>/playersByTeam/&lt;teamName&gt;</em>
+				</p>
+				<p>
+					Click the button and see the section
+					<em>Ranking list</em>
+					below showing the retrieved data.
+				</p>
+				<p>
+					<input id="sample2" type="button" name="sample2" value="Whole team"></input>
+				</p>
+			</subsection>
+
+			<subsection
+				name="Retrieve the data for all players of the whole ranking list">
+				<p>
+					To retrieve the data for all players you have to call
+					service
+					<em>/players</em>
+				</p>
+				<p>
+					Click the button and see the section
+					<em>Ranking list</em>
+					below showing the retrieved data.
+				</p>
+				<p>
+					<input id="sample3" type="button" name="sample3" value="Complete list"></input>
+				</p>
+			</subsection>
+
+			<subsection name="Ranking list">
+				<p>
+					With this button you can clear the ranking list and the dump
+					area.
+				</p>
+				<p>
+					<input id="clear" type="button" name="clear" value="Clear"></input>
+				</p>
+				<p>To refresh the ranking list click one of the buttons above.</p>
+				<div id="rangliste"></div>
+			</subsection>
+
+			<subsection name="Dump">
+				<p>In this area you'll see the plain JSON data retrieved from the
+					service.</p>
+				<div id="dump"></div>
+			</subsection>
+
+		</section>
+	</body>
+
+</document>
