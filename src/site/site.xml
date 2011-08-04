@@ -2,7 +2,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/DECORATION/1.1.0 http://maven.apache.org/xsd/decoration-1.1.0.xsd"
 	name="at.meikel.dmrl">
-	<publishDate position="left" format="yyyy-MM-dd hh:mm:ss" />
+	<publishDate position="left" format="${site.publishDateFormat}" />
 	<version position="left" />
 	<poweredBy>
 		<logo name="Maven" href="http://maven.apache.org/"
@@ -12,7 +12,10 @@
 		<links>
 			<item name="www.meikel.at" href="http://www.meikel.at" />
 		</links>
-		<menu name="Documentation">
+		
+		<menu ref="parent" />
+
+		<menu name="Overview">
 			<item name="FAQ" href="faq.html" />
 			<item name="Samples" href="samples.html" />
 			<item name="Join in" href="join-in.html" />
@@ -20,6 +23,5 @@
 
 		<menu ref="modules" />
 		<menu ref="reports" />
-		<menu ref="parent" />
 	</body>
 </project>

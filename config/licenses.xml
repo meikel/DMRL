@@ -2,6 +2,16 @@
 <licenses>
 	<valid>
 		<license>
+			<id>Apache Software License 1.1 (Historic)</id>
+			<description>Apache Software License 1.1 (Historic)</description>
+			<names>
+				<name>Apache License, Version 1.1</name>
+			</names>
+			<urls>
+				<url>http://www.apache.org/licenses/LICENSE-1.1</url>
+			</urls>
+		</license>
+		<license>
 			<id>Apache Software License 2.0</id>
 			<description>Apache Software License 2.0</description>
 			<names>
@@ -18,6 +28,7 @@
 				<url>http://apache.org/licenses/LICENSE-2.0.html</url>
 				<url>http://apache.org/licenses/LICENSE-2.0.txt</url>
 				<url>LICENSE.txt</url>
+				<url>../LICENSE.txt</url>
 			</urls>
 		</license>
 		<license>
@@ -30,9 +41,6 @@
 				<url>http://www.opensource.org/licenses/cpl1.0.txt</url>
 			</urls>
 		</license>
-	</valid>
-
-	<invalid>
 		<license>
 			<id>GNU General Public License (GPL)</id>
 			<description>GNU General Public License (GPL)</description>
@@ -43,20 +51,67 @@
 			<urls>
 				<url>http://www.gnu.org/licenses/gpl-2.0.html</url>
 				<url>http://www.gnu.org/licenses/gpl-3.0.txt</url>
+				<url>http://www.gnu.org/licenses/gpl.txt</url>
 			</urls>
 		</license>
+		<license>
+			<id>GNU Lesser General Public License (LGPL)</id>
+			<description>GNU Lesser General Public License (LGPL)</description>
+			<names>
+				<name>GNU Lesser General Public License</name>
+			</names>
+			<urls>
+				<url>http://www.gnu.org/licenses/lgpl.txt</url>
+				<url>http://www.gnu.org/licenses/lgpl-2.1.html</url>
+			</urls>
+		</license>
+		<license>
+			<id>Mozilla Public License version</id>
+			<description>Mozilla Public License version</description>
+			<names>
+				<name>Mozilla Public License, version 1.1</name>
+			</names>
+			<urls>
+				<url>http://www.mozilla.org/MPL/MPL-1.1.html</url>
+			</urls>
+		</license>
+		<license>
+			<id>Eclipse Public License</id>
+			<description>Eclipse Public License</description>
+			<names>
+				<name>Eclipse Public License - v 1.0</name>
+			</names>
+			<urls>
+				<url>http://www.eclipse.org/legal/epl-v10.html</url>
+			</urls>
+		</license>
+		<license>
+			<id>The W3C Software License</id>
+			<description>The W3C Software License</description>
+			<names>
+				<name>The W3C Software License</name>
+			</names>
+			<urls>
+				<url>http://www.w3.org/Consortium/Legal/copyright-software-19980720</url>
+			</urls>
+		</license>
+		<license>
+			<id>HSQLDB License, a BSD open source license</id>
+			<description>HSQLDB License, a BSD open source license</description>
+			<names>
+				<name>HSQLDB License, a BSD open source license</name>
+			</names>
+			<urls>
+				<url>http://hsqldb.org/web/hsqlLicense.html</url>
+			</urls>
+		</license>
+	</valid>
+
+	<!--
+	<invalid>
 	</invalid>
 
 	<warning>
-		<license>
-			<id>Apache Software License 1.1 (Historic)</id>
-			<description>Apache Software License 1.1 (Historic)</description>
-			<names>
-				<name>Apache License, Version 1.1</name>
-			</names>
-			<urls>
-				<url>http://www.apache.org/licenses/LICENSE-1.1</url>
-			</urls>
-		</license>
 	</warning>
+	-->
 </licenses>

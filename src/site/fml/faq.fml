@@ -111,8 +111,66 @@
 				</p>
 			</answer>
 		</faq>
-	</part>
 
+		<faq id="how-to-download-and-build">
+			<question>How to download source code of DMRL and build and run it
+				locally?</question>
+			<answer>
+				<p>If you want to download the source code of DMRL and build and run
+					it locally just complete the following steps:</p>
+
+				<ul>
+					<li>
+						Make sure to have
+						<a href="http://www.java.com/de/download/">Java</a>
+						and
+						<a href="http://maven.apache.org/">Maven</a>
+						installed on your computer.
+					</li>
+					<li>
+						Download the
+						<a href="https://github.com/meikel/DMRL/zipball/master">zip file</a>
+						and unpack it somewhere on the hard disc. The directory which
+						arises by unpacking the zip file will be referenced to as ${base}.
+					</li>
+					<li>
+						Open a console window, change working dir to the ${base} directory
+						and run the commands
+						<ul>
+							<li>
+								mvn package</li>
+							<li>
+								cd at.meikel.dmrl.webapp
+							</li>
+							<li>
+								mvn jetty:run (this starts the web server on port 8080, if
+								you want to use another port type the command mvn [
+								-Djetty.port=&lt;port&gt; ] jetty:run)
+							</li>
+						</ul>
+					</li>
+					<li>
+						Open a web browser and navigate to
+						<a href="http://localhost:8080/index.jsp">http://localhost:8080/index.jsp</a>
+						or
+						<a href="http://localhost:8080/client.jsp">http://localhost:8080/client.jsp</a>
+					</li>
+					<li>To stop the aplication just close the console window.</li>
+					<li>
+						To generate the project homepage, change working dir to the
+						${base} directory
+						and run the command
+						<ul>
+							<li>
+								mvn site:stage</li>
+						</ul>
+						which creates the resulting website in ${base}/target/staging
+						directory.
+					</li>
+				</ul>
+			</answer>
+		</faq>
+	</part>
 
 	<!--
 		<part id="install"> <title>Installation</title> <faq id="how-install">

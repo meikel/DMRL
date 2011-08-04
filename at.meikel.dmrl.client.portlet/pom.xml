@@ -1,0 +1,70 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>at.meikel.dmrl.root</artifactId>
+		<groupId>at.meikel.dmrl</groupId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<groupId>at.meikel.dmrl</groupId>
+	<artifactId>at.meikel.dmrl.client.portlet</artifactId>
+	<name>DMRL (Portlet)</name>
+	<version>0.0.1-SNAPSHOT</version>
+	<properties>
+		<jackson.version>1.8.1</jackson.version>
+	</properties>
+	<description>This module creates a portlet which allows to call some of the services.</description>
+	<repositories>
+		<!--
+			<repository> <id>glassfish-repository</id> <name>Java.net Repository
+			for Glassfish</name>
+			<url>http://download.java.net/maven/glassfish</url> </repository>
+		-->
+		<repository>
+			<id>maven2-repository.dev.java.net</id>
+			<name>Java.net Repository for Maven</name>
+			<url>http://download.java.net/maven/2/</url>
+			<layout>default</layout>
+		</repository>
+	</repositories>
+	<!--
+		<pluginRepositories> <pluginRepository>
+		<id>maven2-repository.dev.java.net</id> <name>Java.net Repository for
+		Maven</name> <url>http://download.java.net/maven/2/</url>
+		<layout>default</layout> </pluginRepository> <pluginRepository>
+		<id>maven2-glassfish-repository.dev.java.net</id> <name>Java.net
+		Repository for Maven</name>
+		<url>http://download.java.net/maven/glassfish/</url>
+		</pluginRepository> </pluginRepositories>
+	-->
+	<dependencies>
+		<dependency>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-client</artifactId>
+			<version>1.8</version>
+		</dependency>
+		<!-- BEGIN: net.sf.json-lib -->
+		<dependency>
+			<groupId>net.sf.json-lib</groupId>
+			<artifactId>json-lib</artifactId>
+			<version>2.3</version>
+			<classifier>jdk15</classifier>
+		</dependency>
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
+			<version>1.8.3</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-collections</groupId>
+			<artifactId>commons-collections</artifactId>
+			<version>3.2.1</version>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.ezmorph</groupId>
+			<artifactId>ezmorph</artifactId>
+			<version>1.0.6</version>
+		</dependency>
+		<!-- END: net.sf.json-lib -->
+	</dependencies>
+</project>
