@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+
+	<properties>
+		<title>at.meikel.dmrl - Sample</title>
+		<author email="meikel@meikel.at">Meikel</author>
+	</properties>
+
+	<head>
+		<script type="text/javascript"
+			src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+		<script type="text/javascript"
+			src="http://plugins.jquery.com/files/jquery.dump.js.txt"></script>
+		<script type="text/javascript" src="./js/client.js"></script>
+	</head>
+
+	<body>
+		<section
+			name="Den jQuery-basierten DMRL Client in die eigene Homepage integrieren">
+
+			<subsection name="Einleitung">
+				<p>In dieser Anleitung wird beschrieben wie Du den jQuery-basierten
+					DMRL Client in Deine eigene Homepage integrieren kannst.</p>
+				<p>Du solltest wissen, dass dieser DMRL Client in JavaScript
+					realisiert ist und somit nur lauffähig ist, wenn die Anwender die
+					Deine Homepage aufrufen die Ausführung von JavaScript aktiviert
+					haben. Bei allen anderen Usern wird der DMRL Client nicht laufen.
+				</p>
+				<p>Dieses
+					Problem wird allerdings in dieser Anleitung dahingehend
+					berücksichtigt, dass bei ausgeschaltetem JavaScript im Browser
+					einfach der entsprechende Bereich unsichtbar geschaltet wird. Deine
+					Homepage wird in diesem Fall für
+					den Anwender genauso dargestellt
+					wie bisher, ohne dass eine
+					Rangliste angezeigt wird.
+				</p>
+				<p>
+					Weiterhin sei darauf hingewiesen, dass der bereitgestellte DMRL
+					Client
+					auf
+					<a href="http://de.wikipedia.org/wiki/JQuery">jQuery</a>
+					basiert. Es ist nicht auszuschließen, dass es zu Konflikten kommt,
+					falls Du bereits ein anderes JavaScript-Framework zur
+					DOM-Manipulation verwendest. In diesem Fall wäre ich Dir sehr
+					dankbar, wenn Du mich über die Probleme informieren würdest.
+				</p>
+				<p>Die Software DMRL stellt mehrere Dienste zur Verfügung. In dieser
+					Anleitung wird davon ausgegangen, dass Du eine Homepage für einen
+					Minigolf-Club betreibst und auf dieser Homepage nun den Ausschnitt
+					der Deutschen Minigolf Rangliste anzeigen willst der nur die
+					Spieler Deines Vereins enthält. Genau für diesen Zweck stellt DMRL
+					einen Service „playersByTeam“ zur Verfügung, dem man als
+					Aufrufparameter einfach den Namen des gewünschten Vereins übergibt.
+				</p>
+			</subsection>
+
+			<subsection name="Vorbereitung">
+				<p>
+					Es wird davon ausgegangen, dass Du bereits eine eigene Homepage
+					betreibst. Um in dieser Anleitung jedoch etwas konkreter werden zu
+					können bezieht sich die Anleitung auf die frei erfundene Homepage
+					des fiktiven „1. Minigolf Clubs Vaucluse“, auch „1. MGCV“
+					genannt.
+				</p>
+				<p>
+					Da dies noch ein sehr junger Club mit äußerst wenigen Mitgliedern
+					ist, ist die Homepage noch im Aufbau befindlich. Bisher gibt
+					es nur
+					die Datei index.html, die folgenden Inhalt hat:</p>
+
+				<macro name="snippet">
+					<param name="file"
+						value="./at.meikel.dmrl.doc/src/site/resources/userguide/1/index.html" />
+				</macro>
+
+				<p>Sofern Du noch keine Homepage hast solltest Du einfach mit dieser
+					Beispieldatei beginnen. Lege einfach mit einem beliebigen
+					Texteditor eine Datei mit dem Namen index.html an und kopiere den
+					oben dargestellten Inhalt in die Datei. Nachdem Du die Datei
+					gespeichert hast, öffnest Du diese einfach mit einem Doppelklick im
+					Browser. Du solltest im Browser jetzt die rudimentäre Homepage
+					angezeigt bekommen.</p>
+
+				<p>
+					Hier findet Du den
+					<a
+						href="http://www.meikel.at/dmrl/at.meikel.dmrl.doc/userguide/1/index.html">Quellcode zum Kapitel "Vorbereitung"</a>
+					.
+				</p>
+
+			</subsection>
+
+			<subsection name="jQuery einbinden">
+				<p>
+					Zunächst einmal musst Du die benötigten jQuery-Bibliotheken in
+					Deine Homepage einbinden. Um eine rudimentäre Funktionsprüfung zu
+					haben wird sinnvollerweise nach dem Laden der Seite eine Meldung
+					auf den Bildschirm ausgegeben. Sobald dies funktioniert kann dann
+					die Meldung wieder ausgebaut werden.
+				</p>
+				<p>
+					Dazu fügst Du einfach im &lt;head&gt;-Bereich Deiner Homepage
+					folgenden Inhalt ein:</p>
+
+				<macro name="snippet">
+					<param name="id" value="jQuery" />
+					<param name="file"
+						value="./at.meikel.dmrl.doc/src/site/resources/userguide/2/index.html" />
+				</macro>
+
+				<p>Nehme die hier gezeigten Änderungen an der Datei index.html vor
+					und führe im
+					Browser ein Refresh durch. Nachdem die Seite neu im
+					Browser geladen
+					wurde sollte jetzt ein Meldungsfenster mit dem
+					Inhalt "Here I am."
+					erscheinen.</p>
+
+				<p>Durch diese Änderungen hast Du folgendes erreicht: die ersten
+					beiden &lt;script&gt;-Anweisungen führen dazu, dass sowohl die
+					jQuery-Core Bibliothek als auch eine Hilfsbibliothek geladen
+					werden. Diese Änderung alleine hätte noch keinerlei sichtbare
+					Auswirkung. Um eine rudimentäre Funktionsprüfung zu haben, d.h. um
+					zu sehen ob die jQuery-Core-Bibliothek wirklich vom Browser geladen
+					wird, wird deshalb mit dem letzten &lt;script&gt;-Befehl ein
+					JavaScript hinterlegt, das direkt nach dem Laden des Dokumentes
+					die
+					Meldung "Here I am." ausgibt. Wenn diese Meldung erscheint,
+					dann
+					hast Du die Gewissheit, dass Deine Änderungen bis hierher
+					schonmal
+					funktionieren.</p>
+
+				<p>
+					Hier findet Du den
+					<a
+						href="http://www.meikel.at/dmrl/at.meikel.dmrl.doc/userguide/2/index.html">Quellcode zum Kapitel "jQuery einbinden"</a>
+					.
+				</p>
+
+			</subsection>
+
+			<subsection name="DMRL Client integrieren">
+
+				<p>Nun baust Du in den &lt;body&gt;-Bereich der Datei einen
+					Rahmen
+					ein in dem die Rangliste dann dargestellt werden soll. Dies
+					sieht
+					folgendermaßen aus:</p>
+
+				<macro name="snippet">
+					<param name="id" value="includeBody" />
+					<param name="file"
+						value="./at.meikel.dmrl.doc/src/site/resources/userguide/3/index.html" />
+				</macro>
+
+				<p>Zusätzlich musst Du im &lt;head&gt;-Bereich eine weitere
+					JavaScript
+					Bibliothek laden, nämlich den DMRL Client selbst.
+					Außerdem kannst
+					Du
+					die JavaScript Funktion die sich ebenfalls im
+					&lt;head&gt;-Bereich
+					befindet so umschreiben, dass kein alert() mehr
+					ausgeführt wird
+					sondern statt dessen der DMRL Client aufgerufen
+					wird. Dazu nimmst
+					Du
+					folgende Änderungen vor:</p>
+
+				<macro name="snippet">
+					<param name="id" value="includeHead" />
+					<param name="file"
+						value="./at.meikel.dmrl.doc/src/site/resources/userguide/3/index.html" />
+				</macro>
+
+				<p>Was hast Du durch diese Änderungen erreicht? Zunächst einmal hast
+					Du einen weiteren Inhalt zu Deiner Homepage hinzugefügt. Um diesen
+					Bereich möglichst einfach sichtbar und unsichtbar schalten zu
+					können, wird der gesamte Bereich einfach in ein &lt;div&gt;-Element
+					gepackt und dieses bekommt eine Id zugewiesen, in diesem Fall de Id
+					"ranglisteContainer". Dieses &lt;div&gt;-Element wird per CSS
+					unsichtbar geschaltet. Der JavaScript Code wird später dafür
+					sorgen, dass der Bereich sichtbar geschaltet wird. Ein Browser der
+					kein JavaScript aktiviert hat, wird den gesamten Bereich also
+					niemals anzeigen.</p>
+
+				<p>Der neue (vorerst noch unsichtbare) Inhalt besteht aus einer
+					Überschrift (&lt;h2&gt;) sowie zwei &lt;div&gt;-Elementen, die über
+					ihre beiden Ids "ranglisteBody" und "ranglisteDebug" angesprochen
+					werden können. Das erste der beiden Elemente soll später die
+					Rangliste
+					anzeigen, im zweiten können von der API Debugmeldungen
+					ausgegeben
+					werden.</p>
+
+				<p>Durch die Änderungen am JavaScript Code ereichst Du erstens, dass
+					der neu Inhalt sichtbar geschaltet wird und zweitens, dass ein API
+					Aufruf zum Laden und anzeigen der gewünschten Daten erfolgt. Als
+					Aufrufparameter wird im Beispiel der Wert "SG%20Weiterstadt%201886"
+					verwendet, wobei zu beachten ist, dass Leerzeichen mittels %20
+					maskiert wurden. Der übergebene Wert entspricht somit der
+					Zeichenkette "SG Weiterstadt 1886". Mit diesem Aufruf werden also
+					alle Spieler angezeigt, die für die SG Weiterstadt 1886 spielen.
+					Folgende Werte sind hier als Aufrufparameter anstatt des Wertes
+					"SG%20Weiterstadt%201886" zulässig: ... TODO ...
+				</p>
+
+				<p>
+					Hier findet Du den
+					<a
+						href="http://www.meikel.at/dmrl/at.meikel.dmrl.doc/userguide/3/index.html">Quellcode zum Kapitel "DMRL Client integrieren"</a>
+					.
+				</p>
+
+			</subsection>
+
+			<subsection name="Debugmeldungen entfernen">
+
+				<p>Nachdem der eingebaute Code funktionsfähig ist müssen nun noch
+					kleinere Aufräumarbeiten durchgeführt werden: da keine
+					Debugmeldungen mehr angezeit werden sollen sind einige kleine
+					Korrekturen notwendig.</p>
+
+				<p>Dem DMRL Client muss mitgeteilt werden, dass keine Debugmeldungen
+					ausgegeben werden sollen. Dazu wird im Funktionsaufruf
+					DMRL_CLIENT.api(refDebug) einfach der Aufrufparameter refDebug
+					entfernt, es wird also DMRL_CLIENT.api() stattdessen aufgerufen.
+					Danach wird das &lt;div&gt;-Element mit der Id "ranglisteDebug"
+					entfernt. Wenn Du nach diesen Änderungen im Browser ein Refresh
+					durchführst, dann werden jetzt keine Debugmeldungen mehr angezeigt.
+					Die endgültige Version der Homepage sieht jetzt so aus:
+				</p>
+
+				<macro name="snippet">
+					<param name="file"
+						value="./at.meikel.dmrl.doc/src/site/resources/userguide/4/index.html" />
+				</macro>
+
+				<p>
+					Hier findet Du den
+					<a
+						href="http://www.meikel.at/dmrl/at.meikel.dmrl.doc/userguide/4/index.html">Quellcode zum Kapitel "Debugmeldungen entfernen"</a>
+					.
+				</p>
+
+			</subsection>
+
+		</section>
+	</body>
+
+</document>

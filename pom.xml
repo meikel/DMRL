@@ -11,6 +11,7 @@
 		<site.publishDateFormat>yyyy-MM-dd HH:mm:ss</site.publishDateFormat>
 	</properties>
 	<modules>
+		<module>at.meikel.dmrl.doc</module>
 		<module>at.meikel.dmrl.server</module>
 		<module>at.meikel.dmrl.taglib</module>
 		<module>at.meikel.dmrl.webapp</module>
@@ -65,6 +66,7 @@
 				<artifactId>maven-site-plugin</artifactId>
 				<version>3.0-beta-3</version>
 				<configuration>
+					<locales>en,de</locales>
 					<reportPlugins>
 						<plugin>
 							<groupId>org.apache.maven.plugins</groupId>
