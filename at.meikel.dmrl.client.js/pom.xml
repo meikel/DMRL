@@ -1,0 +1,40 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>at.meikel.dmrl.root</artifactId>
+		<groupId>at.meikel.dmrl</groupId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<groupId>at.meikel.dmrl</groupId>
+	<artifactId>at.meikel.dmrl.client.js</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<!-- <packaging>javascript</packaging>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>Codehaus Snapshots</id>
+			<url>http://snapshots.repository.codehaus.org</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+		</pluginRepository>
+	</pluginRepositories>
+
+	<build>
+		<outputDirectory>target/scripts</outputDirectory>
+		<testOutputDirectory>target/test-scripts</testOutputDirectory>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo.javascript</groupId>
+				<artifactId>javascript-maven-plugin</artifactId>
+				<version>1.0-alpha-1-SNAPSHOT</version>
+				<extensions>true</extensions>
+			</plugin>
+		</plugins>
+	</build> -->
+
+</project>

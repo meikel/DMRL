@@ -24,7 +24,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
-public class DataRetriever {
+import at.meikel.mgr.server.IDataRetriever;
+
+public class DataRetriever implements IDataRetriever {
 
 	private HttpClient httpclient;
 	private String currentName = null;
@@ -51,10 +53,12 @@ public class DataRetriever {
 		}
 	}
 
+	@Override
 	public String getUrl() {
 		return URL;
 	}
 
+	@Override
 	public InputStream retrieveInputStream() {
 		// See: http://hc.apache.org/httpcomponents-client/tutorial/html/
 
@@ -78,6 +82,7 @@ public class DataRetriever {
 		return result;
 	}
 
+	@Override
 	public boolean findCurrentFile() {
 		// See: http://code.google.com/p/selenium/wiki/GettingStarted
 
@@ -155,10 +160,12 @@ public class DataRetriever {
 		return currentName != null;
 	}
 
+	@Override
 	public String getCurrentFileName() {
 		return currentName;
 	}
 
+	@Override
 	public Date getCurrentFileDate() {
 		return currentDate;
 	}

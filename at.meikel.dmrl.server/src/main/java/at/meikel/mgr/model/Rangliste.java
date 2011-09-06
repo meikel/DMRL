@@ -1,45 +1,43 @@
 package at.meikel.mgr.model;
 
-import java.util.Collections;
-import java.util.Hashtable;
 import java.util.List;
 import java.util.Vector;
 
 public class Rangliste {
 
-	private Hashtable<Integer, Player> map = new Hashtable<Integer, Player>();
+  private Vector<Player> eintraege = new Vector<Player>();
 
-	public void addSpieler(int platz, Player spieler) {
-		map.put(new Integer(platz), spieler);
-	}
+  public void addSpieler(Player spieler) {
+    eintraege.add(spieler);
+  }
 
-	public int size() {
-		return map.size();
-	}
+  public int size() {
+    return eintraege.size();
+  }
 
-	public List<Player> getAllPlayers() {
-		return new Vector<Player>(map.values());
-	}
+  public List<Player> getAllPlayers() {
+    return new Vector<Player>(eintraege);
+  }
 
-	public List<Player> find(String verein) {
-		Vector<Player> result = new Vector<Player>();
-		Vector<Integer> keys = new Vector<Integer>(map.keySet());
-		Collections.sort(keys);
-		for (Integer platz : keys) {
-			Player spieler = map.get(platz);
-			if ((verein == null) || (verein.equals(spieler.getVerein()))) {
-				result.add(spieler);
-			}
-		}
-		return result;
-	}
+  public List<Player> find(String verein) {
+    if (verein != null) {
+      verein = verein.toLowerCase();
+    }
+    Vector<Player> result = new Vector<Player>();
+    for (Player spieler : eintraege) {
+      if ((verein == null) || (spieler.getVerein() == null) || (spieler.getVerein().toLowerCase().contains(verein))) {
+        result.add(spieler);
+      }
+    }
+    return result;
+  }
 
-	public Player findByLicenseId(String licenseId) {
-		for (Player player : map.values()) {
-			if (player.getPassnummer().equals(licenseId)) {
-				return player;
-			}
-		}
-		return null;
-	}
+  public Player findByLicenseId(String licenseId) {
+    for (Player player : eintraege) {
+      if (player.getPassnummer().equals(licenseId)) {
+        return player;
+      }
+    }
+    return null;
+  }
 }

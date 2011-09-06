@@ -12,6 +12,9 @@
 
 	<bean id="server" class="at.meikel.mgr.server.Server">
 		<constructor-arg index="0" value="pu.hsqldb.mem"></constructor-arg>
+		<constructor-arg index="1">
+			<bean class="at.meikel.mgr.httpclient.DataRetriever"></bean>
+		</constructor-arg>
 	</bean>
 
 	<bean id="jsonConverter"
@@ -19,23 +22,15 @@
 		<property name="supportedMediaTypes" value="application/json" />
 	</bean>
 
-	<!--
-		Define the OXM marshaller which is used to convert the Objects <->
-		XML.
-	-->
-	<!--
-		<bean id="oxmMarshaller"
-		class="org.springframework.oxm.xstream.XStreamMarshaller" /> <bean
-		id="marshallingHttpMessageConverter"
-		class="org.springframework.http.converter.xml.MarshallingHttpMessageConverter">
-		<property name="marshaller" ref="oxmMarshaller" /> <property
-		name="unmarshaller" ref="oxmMarshaller" /> </bean>
-	-->
+	<!-- Define the OXM marshaller which is used to convert the Objects <-> 
+		XML. -->
+	<!-- <bean id="oxmMarshaller" class="org.springframework.oxm.xstream.XStreamMarshaller" 
+		/> <bean id="marshallingHttpMessageConverter" class="org.springframework.http.converter.xml.MarshallingHttpMessageConverter"> 
+		<property name="marshaller" ref="oxmMarshaller" /> <property name="unmarshaller" 
+		ref="oxmMarshaller" /> </bean> -->
 
-	<!--
-		Required for REST services in order to bind the return value to the
-		ResponseBody.
-	-->
+	<!-- Required for REST services in order to bind the return value to the 
+		ResponseBody. -->
 	<bean
 		class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
 		<property name="messageConverters">

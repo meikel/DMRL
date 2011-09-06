@@ -16,6 +16,7 @@
 		<module>at.meikel.dmrl.taglib</module>
 		<module>at.meikel.dmrl.webapp</module>
 		<module>at.meikel.dmrl.client.portlet</module>
+		<module>at.meikel.dmrl.client.js</module>
 	</modules>
 	<description>The parent module containing all modules to allow a
 		reactor build.</description>

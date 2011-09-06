@@ -2,7 +2,6 @@ package at.meikel.dmrl.webapp.rest;
 
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Vector;
 
@@ -58,19 +57,11 @@ public class PlayerService {
 	public List<Player> getPlayersByTeam(@PathVariable String teamName) {
 		List<Player> result = null;
 		if (server != null) {
-			result = server.getRankingList().getAllPlayers();
+			result = server.getRankingList().find(teamName);
 		}
 
 		if (result == null) {
 			result = new Vector<Player>();
-		}
-
-		Iterator<Player> iterator = result.iterator();
-		while (iterator.hasNext()) {
-			Player player = iterator.next();
-			if (!player.getVerein().equals(teamName)) {
-				iterator.remove();
-			}
 		}
 
 		Collections.sort(result, new Comparator<Player>() {

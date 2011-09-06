@@ -20,9 +20,8 @@
 <p><a href="/rest/admin/getCurrentData">rest/admin/getCurrentData</a></p>
 <p><a href="/rest/admin/listAllData">rest/admin/listAllData</a></p>
 <h3>Players</h3>
+<p><a href="/rest/players/byLicenseId/37225.0">rest/players/byLicenseId/37225</a></p>
+<p><a href="/rest/playersByTeam/weiterstadt">/rest/playersByTeam/weiterstadt</a></p>
 <p><a href="/rest/players">rest/players</a></p>
-<p><a href="/rest/players.jsonp">rest/players.jsonp</a></p>
-<p><a href="/rest/players/byLicenseId/37225.0">rest/players/byLicenseId/37225.0</a></p>
-<p><a href="/rest/players/byLicenseId/4711.jsonp">rest/players/byLicenseId/4711.jsonp</a></p>
 </body>
 </html>
