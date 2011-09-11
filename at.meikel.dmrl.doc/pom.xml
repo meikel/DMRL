@@ -12,7 +12,6 @@
 	<artifactId>at.meikel.dmrl.doc</artifactId>
 	<name>DMRL (Documentation)</name>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>pom</packaging>
 	<description>The project documentation.</description>
 	<distributionManagement>
 		<site>
