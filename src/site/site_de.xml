@@ -13,15 +13,8 @@
 			<item name="www.meikel.at" href="http://www.meikel.at" />
 		</links>
 		
-		<menu ref="parent" />
-
-		<menu name="Overview">
-			<item name="FAQ" href="faq.html" />
-			<item name="Beispiele" href="samples.html" />
-			<item name="Mach' mit" href="join-in.html" />
+		<menu name="Root">
+			<item name="Root" href="../index.html" />
 		</menu>
-
-		<menu ref="modules" />
-		<menu ref="reports" />
 	</body>
 </project>

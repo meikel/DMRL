@@ -72,7 +72,7 @@
 
 				<macro name="snippet">
 					<param name="file"
-						value="./at.meikel.dmrl.doc/src/site/resources/userguide/1/index.html" />
+						value="./src/site/resources/userguide/1/index.html" />
 				</macro>
 
 				<p>Sofern Du noch keine Homepage hast solltest Du einfach mit dieser
@@ -107,7 +107,7 @@
 				<macro name="snippet">
 					<param name="id" value="jQuery" />
 					<param name="file"
-						value="./at.meikel.dmrl.doc/src/site/resources/userguide/2/index.html" />
+						value="./src/site/resources/userguide/2/index.html" />
 				</macro>
 
 				<p>Nehme die hier gezeigten Änderungen an der Datei index.html vor
@@ -153,7 +153,7 @@
 				<macro name="snippet">
 					<param name="id" value="includeBody" />
 					<param name="file"
-						value="./at.meikel.dmrl.doc/src/site/resources/userguide/3/index.html" />
+						value="./src/site/resources/userguide/3/index.html" />
 				</macro>
 
 				<p>Zusätzlich musst Du im &lt;head&gt;-Bereich eine weitere
@@ -173,7 +173,7 @@
 				<macro name="snippet">
 					<param name="id" value="includeHead" />
 					<param name="file"
-						value="./at.meikel.dmrl.doc/src/site/resources/userguide/3/index.html" />
+						value="./src/site/resources/userguide/3/index.html" />
 				</macro>
 
 				<p>Was hast Du durch diese Änderungen erreicht? Zunächst einmal hast
@@ -236,7 +236,7 @@
 
 				<macro name="snippet">
 					<param name="file"
-						value="./at.meikel.dmrl.doc/src/site/resources/userguide/4/index.html" />
+						value="./src/site/resources/userguide/4/index.html" />
 				</macro>
 
 				<p>

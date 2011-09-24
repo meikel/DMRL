@@ -82,15 +82,11 @@
 				</p>
 
 				<p>
-					The bad news is: until now I did not create any user
-					documentation
-					which explains how to integrate the service in your
-					website. For the
-					moment you have to open the sample in your browser and display
-					the
-					source code. My samples are based on
-					<a href="http://jquery.com/">jQuery</a>
-					and should be easy to understand.
+					I developed a small JavaScript client library which is based on
+					<a href="http://jquery.com/">jQuery</a> to call the service from
+					inside a HTML page. There is a <a href="de/userguide.html">userguide</a>
+					available which explains how to include the DMRL client
+					into your website.
 				</p>
 
 				<p>If you need some help feel free to contact me.</p>

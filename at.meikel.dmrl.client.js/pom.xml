@@ -8,8 +8,10 @@
 	</parent>
 	<groupId>at.meikel.dmrl</groupId>
 	<artifactId>at.meikel.dmrl.client.js</artifactId>
+	<name>DMRL (JavaScript Client Library)</name>
 	<version>0.0.1-SNAPSHOT</version>
-	<!-- <packaging>javascript</packaging>
+	<description>A JavaScript client library for calling the service from inside a HTML page.</description>
+<!-- <packaging>javascript</packaging>
 
 	<pluginRepositories>
 		<pluginRepository>

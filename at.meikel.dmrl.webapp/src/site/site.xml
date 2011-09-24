@@ -19,6 +19,7 @@
 			<item name="FAQ" href="../faq.html" />
 			<item name="Samples" href="../samples.html" />
 			<item name="Join in" href="../join-in.html" />
+			<item name="Userguide" href="../de/userguide.html" />
 		</menu>
 
 		<menu ref="reports" />
