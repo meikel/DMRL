@@ -1,4 +1,4 @@
-﻿cd /d <base>\at.meikel.dmrl.reactor
+cd /d <base>\at.meikel.dmrl.reactor
 mvn package
 
 cd /d <base>\at.meikel.dmrl.reactor\at.meikel.dmrl.webapp
