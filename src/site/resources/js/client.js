@@ -3,7 +3,7 @@ var retrieve = function(service, id) {
 	jQuery("#dump").empty();
 	jQuery(id).empty().append('<p>Calling service ' + url + '</p>');
 	jQuery.getJSON(url + '?callback=?', function(data) {
-		jQuery("#dump").append(jQuery.dump(data));
+		// jQuery("#dump").append(jQuery.dump(data));
 
 		var html = '<table border="1" >\n';
 		html = html + '<thead>\n';
