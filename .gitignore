@@ -2,9 +2,10 @@
 .project
 .settings/
 
+.idea/
+
 at.meikel.dmrl.server/.classpath
 at.meikel.dmrl.server/.project
-
 
 target/
 
