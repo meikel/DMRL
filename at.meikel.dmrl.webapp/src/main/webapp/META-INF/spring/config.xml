@@ -10,10 +10,10 @@
 	<!-- Enable annotation scanning. -->
 	<context:component-scan base-package="at.meikel.dmrl.webapp.rest" />
 
-	<bean id="server" class="at.meikel.mgr.server.Server">
+	<bean id="server" class="at.meikel.dmrl.server.server.Server">
 		<constructor-arg index="0" value="pu.hsqldb.mem"></constructor-arg>
 		<constructor-arg index="1">
-			<bean class="at.meikel.mgr.httpclient.DataRetriever"></bean>
+			<bean class="at.meikel.dmrl.server.httpclient.DataRetriever"></bean>
 		</constructor-arg>
 	</bean>
 

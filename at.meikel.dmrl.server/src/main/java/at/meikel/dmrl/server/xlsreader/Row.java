@@ -1,4 +1,4 @@
-package at.meikel.mgr.xlsreader;
+package at.meikel.dmrl.server.xlsreader;
 
 import java.util.Collections;
 import java.util.Hashtable;

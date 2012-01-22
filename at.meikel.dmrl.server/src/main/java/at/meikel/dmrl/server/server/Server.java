@@ -1,4 +1,4 @@
-package at.meikel.mgr.server;
+package at.meikel.dmrl.server.server;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -17,12 +17,12 @@ import javax.persistence.Query;
 import org.apache.commons.io.output.ByteArrayOutputStream;
 import org.apache.log4j.Logger;
 
-import at.meikel.mgr.model.Player;
-import at.meikel.mgr.model.Rangliste;
-import at.meikel.mgr.persistence.ExcelSheet;
-import at.meikel.mgr.persistence.ExcelSheet.STATE;
-import at.meikel.mgr.xlsreader.Row;
-import at.meikel.mgr.xlsreader.Table;
+import at.meikel.dmrl.server.model.Player;
+import at.meikel.dmrl.server.model.Rangliste;
+import at.meikel.dmrl.server.persistence.ExcelSheet;
+import at.meikel.dmrl.server.persistence.ExcelSheet.STATE;
+import at.meikel.dmrl.server.xlsreader.Row;
+import at.meikel.dmrl.server.xlsreader.Table;
 
 public class Server {
 

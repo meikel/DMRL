@@ -1,4 +1,4 @@
-package at.meikel.mgr.httpclient;
+package at.meikel.dmrl.server.httpclient;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -6,7 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.util.Date;
 
-import at.meikel.mgr.server.IDataRetriever;
+import at.meikel.dmrl.server.server.IDataRetriever;
 
 public class LocalFileDataRetriever implements IDataRetriever {
 

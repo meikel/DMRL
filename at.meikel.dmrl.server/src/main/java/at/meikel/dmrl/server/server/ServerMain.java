@@ -1,4 +1,4 @@
-package at.meikel.mgr.server;
+package at.meikel.dmrl.server.server;
 
 import java.io.File;
 import java.util.List;
@@ -6,10 +6,10 @@ import java.util.List;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 
-import at.meikel.mgr.httpclient.LocalFileDataRetriever;
-import at.meikel.mgr.model.Player;
-import at.meikel.mgr.model.Rangliste;
-import at.meikel.mgr.persistence.ExcelSheet;
+import at.meikel.dmrl.server.httpclient.LocalFileDataRetriever;
+import at.meikel.dmrl.server.model.Player;
+import at.meikel.dmrl.server.model.Rangliste;
+import at.meikel.dmrl.server.persistence.ExcelSheet;
 
 public class ServerMain {
 

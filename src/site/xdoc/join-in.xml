@@ -28,6 +28,8 @@
 					needed.</li>
 				<li>Translation of the user documentation to (at least) german
 					language.</li>
+                                <li>Add a parameter containing version info to all URLs to enforce reloading
+                                        pages in case they're held in a cache</li>
 				<li>Clean up the maven pom files and maven project.</li>
 				<li>Clean up the project homepage.</li>
 				<li>Server should periodically check if a new ranking list is

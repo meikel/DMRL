@@ -1,4 +1,4 @@
-package at.meikel.mgr.persistence;
+package at.meikel.dmrl.server.persistence;
 
 import java.io.Serializable;
 import java.util.Date;

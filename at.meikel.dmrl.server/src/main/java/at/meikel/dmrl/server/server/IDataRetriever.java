@@ -1,4 +1,4 @@
-package at.meikel.mgr.server;
+package at.meikel.dmrl.server.server;
 
 import java.io.InputStream;
 import java.util.Date;

@@ -3,7 +3,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
 	<persistence-unit name="pu.hsqldb.file" transaction-type="RESOURCE_LOCAL">
-		<class>at.meikel.mgr.persistence.ExcelSheet</class>
+		<class>at.meikel.dmrl.server.persistence.ExcelSheet</class>
 		<properties>
 			<property name="hibernate.connection.driver_class" value="org.hsqldb.jdbcDriver" />
 			<property name="hibernate.connection.url" value="jdbc:hsqldb:file:sample-server/db/sample" />
@@ -23,7 +23,7 @@
 		</properties>
 	</persistence-unit>
 	<persistence-unit name="pu.hsqldb.mem" transaction-type="RESOURCE_LOCAL">
-		<class>at.meikel.mgr.persistence.ExcelSheet</class>
+		<class>at.meikel.dmrl.server.persistence.ExcelSheet</class>
 		<properties>
 			<property name="hibernate.connection.driver_class" value="org.hsqldb.jdbcDriver" />
 			<property name="hibernate.connection.url" value="jdbc:hsqldb:mem:sample" />
@@ -43,7 +43,7 @@
 		</properties>
 	</persistence-unit>
 	<persistence-unit name="pu.mysql" transaction-type="RESOURCE_LOCAL">
-		<class>at.meikel.mgr.persistence.ExcelSheet</class>
+		<class>at.meikel.dmrl.server.persistence.ExcelSheet</class>
 		<properties>
 			<property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" />
 			<property name="hibernate.connection.url" value="jdbc:mysql://localhost/sample" />

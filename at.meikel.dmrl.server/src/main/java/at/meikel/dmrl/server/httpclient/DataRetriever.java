@@ -1,4 +1,4 @@
-package at.meikel.mgr.httpclient;
+package at.meikel.dmrl.server.httpclient;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -24,7 +24,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
-import at.meikel.mgr.server.IDataRetriever;
+import at.meikel.dmrl.server.server.IDataRetriever;
 
 public class DataRetriever implements IDataRetriever {
 

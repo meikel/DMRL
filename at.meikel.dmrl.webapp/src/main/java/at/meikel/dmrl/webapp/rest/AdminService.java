@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import at.meikel.mgr.persistence.ExcelSheet;
-import at.meikel.mgr.server.Server;
+import at.meikel.dmrl.server.persistence.ExcelSheet;
+import at.meikel.dmrl.server.server.Server;
 
 @Controller
 public class AdminService {

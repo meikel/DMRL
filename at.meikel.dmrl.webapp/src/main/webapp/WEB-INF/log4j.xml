@@ -27,7 +27,7 @@
 		<level value="WARN"></level>
 	</logger>
 
-	<logger name="at.meikel.mgr.httpclient.DataRetriever">
+	<logger name="at.meikel.dmrl.server.httpclient.DataRetriever">
 		<level value="WARN"></level>
 	</logger>
 

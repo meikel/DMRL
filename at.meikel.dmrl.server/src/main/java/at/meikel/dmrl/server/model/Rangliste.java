@@ -1,4 +1,4 @@
-package at.meikel.mgr.model;
+package at.meikel.dmrl.server.model;
 
 import java.util.List;
 import java.util.Vector;
