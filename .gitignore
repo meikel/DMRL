@@ -12,3 +12,4 @@ target/
 /at.meikel.dmrl.taglib/.checkstyle
 /at.meikel.dmrl.server/sample-server/data
 /at.meikel.dmrl.server/sample-server/logs
+/at.meikel.dmrl.webapp/src/main/webapp/ftp.meikel.at
