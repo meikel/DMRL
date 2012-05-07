@@ -143,8 +143,8 @@ public class Server {
             }
 
             try {
-              Player spieler = new Player(platz, passnummer, row.getColumnValue(3).toString(), row.getColumnValue(4).toString(), row.getColumnValue(5)
-                  .toString(), row.getColumnValue(6).toString(), row.getColumnValue(7).toString());
+              Player spieler = new Player(platz, passnummer, row.getColumnValue(3).toString(), row.getColumnValue(4).toString(), row.getColumnValue(6)
+                  .toString(), row.getColumnValue(7).toString(), row.getColumnValue(8).toString());
               rangliste.addSpieler(spieler);
             } catch (Exception e) {
               e.printStackTrace();
