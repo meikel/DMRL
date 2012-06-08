@@ -2,16 +2,15 @@
 <head>
   <title>jQuery-basierter DMRL Client</title>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js" ></script>
-  <script type="text/javascript" src="http://plugins.jquery.com/files/jquery.dump.js.txt" ></script>
   	<%-- TODO: this code is a peace of shit! Needs to be thrown away. This is just to have something that works. --%>
 	<script type="text/javascript">
 	var laden = function() {
-		$("#dump").empty();
-		var url = "<%=request.getScheme() %>://<%=request.getServerName() %>:<%=request.getServerPort() %>/rest/playersByTeam/SG%20Weiterstadt%201886?callback=?";
+		// $("#dump").empty();
+		var url = "<%=request.getScheme() %>://<%=request.getServerName() %>:<%=request.getServerPort() %>/<%=request.getContextPath() %>rest/playersByTeam/SG%20Weiterstadt%201886?callback=?";
 		// alert('url = ' + url);
 		$.getJSON(url, 
 			function(data) {
-			    $("#dump").append($.dump(data));
+			    // $("#dump").append($.dump(data));
 	
 				$('#url').empty().append('<span id="url">' + url + '</span>');
 	
@@ -56,7 +55,7 @@
 </head>
 <body>
 <h1>Dies ist ein auf jQuery-basierender DMRL Client.</h1>
-<p><a href="/index.jsp">Zur&uuml;ck</a>&nbsp;<a href="/client.jsp">Aktualisieren</a>&nbsp;<span id="exec">Laden</span></p>
+<p><a href="index.jsp">Zur&uuml;ck</a>&nbsp;<a href="client.jsp">Aktualisieren</a>&nbsp;<span id="exec">Laden</span></p>
 
 <h1>Tabelle</h1>
 <p>URL: <span id="url"></span></p>
